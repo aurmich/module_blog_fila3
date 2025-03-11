@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 https://tailblocks.cc/
 https://github.com/mertJF/tailblocks
 //-----------------------------------------
@@ -46,30 +45,8 @@ https://suncel.io/ressources/top/top-12-best-tailwind-ui-components-kits
 https://redpixelthemes.com/blog/tailwindcss-ui-kits-component-libraries/
 
 https://betterprogramming.pub/10-open-source-libraries-for-tailwind-css-components-fdbcb692afa9
-=======
-https://github.com/whitecube/nova-flexible-content
-
-
-https://filamentphp.com/plugins/statik-flexible-content-blocks
-
-
-
-https://tailblocks.cc/
-https://tailwindcomponents.com/
-https://flowbite.com/docs/getting-started/introduction/
-https://merakiui.com/
-https://tailwindui.com/
-https://www.tailwindtoolbox.com/
-https://tw-elements.com/docs/standard/navigation/navbar/
->>>>>>> 660b6fffd2 (Squashed 'laravel/Modules/UI/' content from commit b14fdc133)
 
 
 
 
-<<<<<<< HEAD
 
-=======
-https://freefrontend.com/tailwind-navbars/
-
-https://preline.co/docs/mega-menu.html
->>>>>>> 660b6fffd2 (Squashed 'laravel/Modules/UI/' content from commit b14fdc133)
