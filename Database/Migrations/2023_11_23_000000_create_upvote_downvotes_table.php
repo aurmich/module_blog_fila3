@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
- * Class CreateLiveuserUsersTable.
+ * Class CreateUpvoteDownvotesTable.
  */
 return new class extends XotBaseMigration {
     /**
@@ -18,18 +18,18 @@ return new class extends XotBaseMigration {
         $this->tableCreate(
             static function (Blueprint $table): void {
                 $table->id();
-                $table->longText('comment');
-                $table->foreignId('post_id'); // ->constrained();
-                $table->foreignId('user_id'); // ->constrained();
+                $table->boolean('is_upvote');
+                $table->foreignId('post_id'); // ->references('id')->on('posts')->onDelete('cascade');
+                $table->foreignId('user_id'); // ->references('id')->on('users')->onDelete('cascade');
                 $table->timestamps();
             }
         );
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                if (! $this->hasColumn('parent_id')) {
-                    $table->foreignId('parent_id')->nullable();
-                }
+                // if (! $this->hasColumn('parent_id')) {
+                //    $table->foreignId('parent_id')->nullable();
+                // }
                 // if (! $this->hasColumn('profile_photo_path')) {
                 //    $table->string('profile_photo_path', 2048)->nullable();
                 // }
