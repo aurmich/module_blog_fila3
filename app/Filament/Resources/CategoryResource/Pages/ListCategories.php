@@ -21,16 +21,16 @@ class ListCategories extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            Tables\Columns\IconColumn::make('icon')
+            'icon' => Tables\Columns\IconColumn::make('icon')
                 ->icon(fn ($state) => $state),
-            Tables\Columns\TextColumn::make('title')->searchable()
+            'title' => Tables\Columns\TextColumn::make('title')
+                ->searchable()
                 ->sortable(),
-            Tables\Columns\TextColumn::make('parent.title')->searchable()
+            'parent_title' => Tables\Columns\TextColumn::make('parent.title')
+                ->searchable()
                 ->sortable(),
-            // Tables\Columns\TextColumn::make('updated_at')
-            //     ->sortable()
-            //     ->dateTime(),
-            SpatieMediaLibraryImageColumn::make('image')->collection('category'),
+            'image' => SpatieMediaLibraryImageColumn::make('image')
+                ->collection('category'),
         ];
     }
 

@@ -7,10 +7,23 @@ namespace Modules\Blog\Actions\Article;
 use Modules\Blog\Models\Article;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class TranslateContentAction
 {
+    use QueueableAction;
+
+    /**
+     * Esegue la traduzione dei contenuti di un articolo.
+     *
+     * @param string $model_class
+     * @param string $article_id
+     * @param list<string> $locales
+     * @param array<string,mixed> $data
+     * @param class-string $class
+     * @return void
+     */
     public function execute(string $model_class, string $article_id, array $locales, array $data, string $class): void
     {
         // dddx([app(GetModelClassByModelTypeAction::class)->execute($model_class), Article::class]);
