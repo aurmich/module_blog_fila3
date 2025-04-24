@@ -7,11 +7,15 @@ namespace Modules\Blog\Actions\Article;
 use Modules\Blog\Models\Article;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+>>>>>>> 032086c (.)
 use Webmozart\Assert\Assert;
 
 class TranslateContentAction
 {
+<<<<<<< HEAD
     use QueueableAction;
 
     /**
@@ -24,6 +28,8 @@ class TranslateContentAction
      * @param class-string $class
      * @return void
      */
+=======
+>>>>>>> 032086c (.)
     public function execute(string $model_class, string $article_id, array $locales, array $data, string $class): void
     {
         // dddx([app(GetModelClassByModelTypeAction::class)->execute($model_class), Article::class]);

@@ -21,6 +21,7 @@ class ListCategories extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'icon' => Tables\Columns\IconColumn::make('icon')
                 ->icon(fn ($state) => $state),
             'title' => Tables\Columns\TextColumn::make('title')
@@ -31,6 +32,18 @@ class ListCategories extends XotBaseListRecords
                 ->sortable(),
             'image' => SpatieMediaLibraryImageColumn::make('image')
                 ->collection('category'),
+=======
+            Tables\Columns\IconColumn::make('icon')
+                ->icon(fn ($state) => $state),
+            Tables\Columns\TextColumn::make('title')->searchable()
+                ->sortable(),
+            Tables\Columns\TextColumn::make('parent.title')->searchable()
+                ->sortable(),
+            // Tables\Columns\TextColumn::make('updated_at')
+            //     ->sortable()
+            //     ->dateTime(),
+            SpatieMediaLibraryImageColumn::make('image')->collection('category'),
+>>>>>>> 032086c (.)
         ];
     }
 
