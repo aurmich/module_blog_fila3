@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
 /**
  * Migrazione per la creazione della tabella dei voti (upvote/downvote).
  */
@@ -15,23 +14,10 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-=======
-/*
- * Class CreateUpvoteDownvotesTable.
- */
-return new class extends XotBaseMigration {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        // -- CREATE --
->>>>>>> 032086c (.)
         $this->tableCreate(
             static function (Blueprint $table): void {
                 $table->id();
                 $table->boolean('is_upvote');
-<<<<<<< HEAD
                 $table->foreignId('post_id')
                     ->constrained('blog_articles')
                     ->cascadeOnDelete();
@@ -43,11 +29,10 @@ return new class extends XotBaseMigration {
                 $table->timestamps();
                 $table->softDeletes();
                 
-                $table->unique(['post_id', 'user_id']);
-=======
-                $table->foreignId('post_id'); // ->references('id')->on('posts')->onDelete('cascade');
-                $table->foreignId('user_id'); // ->references('id')->on('users')->onDelete('cascade');
-                $table->timestamps();
+                //$table->unique(['post_id', 'user_id']);
+                //$table->foreignId('post_id'); // ->references('id')->on('posts')->onDelete('cascade');
+                //$table->foreignId('user_id'); // ->references('id')->on('users')->onDelete('cascade');
+                //$table->timestamps();
             }
         );
         // -- UPDATE --
@@ -60,7 +45,6 @@ return new class extends XotBaseMigration {
                 //    $table->string('profile_photo_path', 2048)->nullable();
                 // }
                 $this->updateTimestamps(table: $table, hasSoftDeletes: true);
->>>>>>> 032086c (.)
             }
         );
     }

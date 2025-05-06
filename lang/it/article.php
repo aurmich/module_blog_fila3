@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 <?php
 
 return array (
-=======
-<?php return array (
->>>>>>> 09f896e (.)
   'navigation' => 
   array (
     'name' => 'Articolo',
@@ -13,10 +9,7 @@ return array (
     array (
       'name' => 'Content',
     ),
-<<<<<<< HEAD
     'sort' => 91,
-=======
->>>>>>> 09f896e (.)
   ),
   'rating' => 
   array (
@@ -120,8 +113,4 @@ return array (
       'label' => 'activeLocale',
     ),
   ),
-<<<<<<< HEAD
 );
-=======
-);
->>>>>>> 09f896e (.)

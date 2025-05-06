@@ -46,18 +46,13 @@ class ListBanners extends XotBaseListRecords
     }
 
     /**
-<<<<<<< HEAD
      * Definisce le colonne della tabella di elenco banner.
      *
      * @return array<string, \Filament\Tables\Columns\Column>
-=======
-     * @return array<string, mixed>
->>>>>>> 032086c (.)
      */
     public function getListTableColumns(): array
     {
         return [
-<<<<<<< HEAD
             'id' => Tables\Columns\TextColumn::make('id')
                 ->label(static::trans('fields.id'))
                 ->sortable()
@@ -71,21 +66,6 @@ class ListBanners extends XotBaseListRecords
                 ->sortable()
                 ->searchable(),
             'image' => SpatieMediaLibraryImageColumn::make('image')
-=======
-            Tables\Columns\TextColumn::make('id')
-                ->label(static::trans('fields.id'))
-                ->sortable()
-                ->searchable(),
-            Tables\Columns\TextColumn::make('title')
-                ->label(static::trans('fields.title'))
-                ->sortable()
-                ->searchable(),
-            Tables\Columns\TextColumn::make('category.title')
-                ->label(static::trans('fields.category.title'))
-                ->sortable()
-                ->searchable(),
-            SpatieMediaLibraryImageColumn::make('image')
->>>>>>> 032086c (.)
                 ->label(static::trans('fields.image'))
                 ->collection('banner'),
         ];

@@ -49,3 +49,6 @@ vendor
 vendor/
 build/docs/cache/
 cache/
+-e 
+# PHPStan documentation
+docs/phpstan/
