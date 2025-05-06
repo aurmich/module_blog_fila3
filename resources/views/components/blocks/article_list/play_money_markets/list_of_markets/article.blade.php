@@ -2,6 +2,10 @@
     <div class="gap-5 sm:columns-2" style="gap: 1rem; counter-reset: grid;">
     @foreach($articles as $article)
         @php
+<<<<<<< HEAD
+=======
+            $article_model = $article;
+>>>>>>> 09f896e (.)
             $article = $_theme->mapArticle($article);
         @endphp
         <article class="bg-white pt-6 lg:pl-6 pb-[18px] lg:pr-[18px] rounded-lg flex flex-col gap-6 border rounded mb-5" style="break-inside: avoid;">
@@ -34,6 +38,7 @@
                 @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.categories')
             </div>
 
+<<<<<<< HEAD
 
             <!-- outcomes -->
             {{-- questa blade è uguale a Blog\Resources\views\livewire\article\ratings-with-image\rating_with_image.blade.php --}}
@@ -42,12 +47,25 @@
             {{-- <livewire:article.ratings-with-image type="index" :ratings="$article->ratings" :wire:key="$article->uuid" :article_uuid="$article->uuid"/> --}}
             {{-- {{ dddx($article->ratings) }} --}}
             <livewire:article.ratings-with-image 
+=======
+            @livewire(\Modules\Predict\Http\Livewire\Widgets\RatingsWithImageWidget::class, [
+                'article' => $article_model, 
+                'ratings' => $article->ratings, 
+                'profile_credits' => $_profile->credits ?? null
+                ])
+
+            {{-- <livewire:article.ratings-with-image 
+>>>>>>> 09f896e (.)
                 type="index" 
                 :ratings="$article->ratings" 
                 :wire:key="$article->uuid" 
                 :article_uuid="$article->uuid"
+<<<<<<< HEAD
                 {{-- :article="$article" --}}
                 />
+=======
+                /> --}}
+>>>>>>> 09f896e (.)
 
             @if($article->tags->count())
                 <div class="flex flex-wrap gap-1">
@@ -69,5 +87,27 @@
             @endif
         </article>
     @endforeach
+<<<<<<< HEAD
+=======
+
+
+    @php
+    // <x-filament::modal id="test-modal">
+    //     <x-slot name="heading">
+    //         Modal heading
+    //     </x-slot>
+     
+    //     <x-slot name="description">
+    //         Modal description
+    //         {{ $text }}
+    //     </x-slot>
+     
+    //     {{-- Modal content --}}
+    // </x-filament::modal>
+    @endphp
+    {{-- @livewire(\Modules\Predict\Http\Livewire\Widgets\GlobalModal::class, []) --}}
+
+
+>>>>>>> 09f896e (.)
     </div>
 {{-- @endforeach --}}

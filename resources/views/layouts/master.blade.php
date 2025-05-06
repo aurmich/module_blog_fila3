@@ -7,13 +7,21 @@
         <title>Module Blog</title>
 
        {{-- Laravel Vite - CSS File --}}
+<<<<<<< HEAD
        {{-- {{ module_vite('build-blog', 'Resources/assets/sass/app.scss') }} --}}
+=======
+       {{-- {{ module_vite('build-blog', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> 09f896e (.)
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Vite - JS File --}}
+<<<<<<< HEAD
         {{-- {{ module_vite('build-blog', 'Resources/assets/js/app.js') }} --}}
+=======
+        {{-- {{ module_vite('build-blog', 'resources/assets/js/app.js') }} --}}
+>>>>>>> 09f896e (.)
     </body>
 </html>

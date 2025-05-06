@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <?php
 
 return array (
+=======
+<?php return array (
+>>>>>>> 09f896e (.)
   'navigation' => 
   array (
     'name' => 'Banner',
@@ -9,7 +13,10 @@ return array (
     array (
       'name' => 'Content',
     ),
+<<<<<<< HEAD
     'sort' => 28,
+=======
+>>>>>>> 09f896e (.)
   ),
   'fields' => 
   array (
@@ -52,4 +59,8 @@ return array (
       'label' => 'import',
     ),
   ),
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> 09f896e (.)

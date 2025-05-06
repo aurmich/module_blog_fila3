@@ -56,28 +56,6 @@ class ListArticles extends XotBaseListRecords
         ];
     }
 
-    /**
-     * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
-     */
-    public function getTableActions(): array
-    {
-        return [
-            'edit' => Tables\Actions\EditAction::make()->label(''),
-            'view' => Tables\Actions\ViewAction::make()->label(''),
-            'delete' => Tables\Actions\DeleteAction::make()->label(''),
-        ];
-    }
-
-    /**
-     * @return array<string, \Filament\Tables\Actions\BulkAction>
-     */
-    public function getTableBulkActions(): array
-    {
-        return [
-            'delete' => Tables\Actions\DeleteBulkAction::make(),
-        ];
-    }
-
     public function getTableFilters(): array
     {
         return [
@@ -95,9 +73,7 @@ class ListArticles extends XotBaseListRecords
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
             ->filters($this->getTableFilters())
-            ->bulkActions($this->getTableBulkActions())
             ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->actions($this->getTableActions())
             ->defaultSort('published_at', 'desc');
     }
 
