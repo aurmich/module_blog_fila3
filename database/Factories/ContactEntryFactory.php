@@ -5,18 +5,11 @@ declare(strict_types=1);
 namespace Modules\Blog\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
-use Modules\Blog\Models\ContactEntry;
-
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\Blog\Models\ContactEntry>
-=======
 use Modules\Blog\app\Models\ContactEntry;
 
 /**
  * @phpstan-ignore-next-line
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\Blog\app\Models\ContactEntry>
->>>>>>> origin/dev
  */
 class ContactEntryFactory extends Factory
 {

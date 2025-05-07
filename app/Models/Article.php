@@ -173,15 +173,7 @@ use Webmozart\Assert\Assert;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @mixin \Illuminate\Database\Eloquent\Model
-=======
-<<<<<<< HEAD
- * @mixin \Eloquent
-=======
- * @mixin \Illuminate\Database\Eloquent\Model
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
  */
 class Article extends BaseModel implements Feedable, HasRatingContract, HasTranslationsContract
 {
@@ -232,11 +224,6 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         };
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bb321e5 (.)
     /**
      * Attributi assegnabili in massa (mass assignment).
      * @return array<string, string>
@@ -258,10 +245,6 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
      * Attributi assegnabili in massa (mass assignment).
      * @var list<string>
      */
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
     protected $fillable = [
         'uuid',
         'user_id',
@@ -328,29 +311,12 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
     ];
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-     * return \Illuminate\Database\Eloquent\Collection<int, Article>.
-     *
-     * @return \Illuminate\Support\Collection<int, Article>
-     */
-    public static function getAllFeedItems()
-    {
-        return self::latest()->take(150)->get();
-=======
->>>>>>> bb321e5 (.)
      * Restituisce tutti i feed item.
-=======
-     * return \Illuminate\Database\Eloquent\Collection<int, Article>.
->>>>>>> 547f47f (.)
      *
-     * @return \Illuminate\Support\Collection<int, Article>
+     * @return \Illuminate\Database\Eloquent\Collection<int, Article>
      */
-    public static function getAllFeedItems()
+    public static function getAllFeedItems(): \Illuminate\Database\Eloquent\Collection
     {
-<<<<<<< HEAD
         return static::latest()->take(150)->get();
     }
 
@@ -363,13 +329,6 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
     {
         $column = $column ?? static::CREATED_AT;
         return static::query()->latest($column);
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
-=======
-        return self::latest()->take(150)->get();
->>>>>>> 547f47f (.)
     }
 
     public function sluggable(): array

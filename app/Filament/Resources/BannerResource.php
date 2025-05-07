@@ -28,15 +28,6 @@ class BannerResource extends XotBaseResource
     //     return ['it', 'en'];
     // }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-=======
->>>>>>> bb321e5 (.)
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
@@ -52,11 +43,6 @@ class BannerResource extends XotBaseResource
     public static function getFormFields(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
                 Forms\Components\Grid::make()->columns(2)->schema([
                     Forms\Components\TextInput::make('title')
                         ->label(static::trans('fields.title'))
@@ -83,65 +69,24 @@ class BannerResource extends XotBaseResource
                         ->columnSpan(1),
                     Forms\Components\Toggle::make('landing_banner')
                         ->columnSpan(1),
-=======
-            Forms\Components\Grid::make()->columns(2)->schema([
-                Forms\Components\TextInput::make('title')
-                    ->label(static::trans('fields.title'))
-                    ->columnSpan(1)
-                    ->required(),
-                Forms\Components\TextInput::make('description')
-                    ->columnSpan(1)
-                    ->required(),
-                // Forms\Components\TextInput::make('action_text')
-                //     ->columnSpan(1)
-                //     ->required(),
-                Forms\Components\Select::make('category_id')
-                    ->required()
-                    ->options(Category::getTreeCategoryOptions()),
-                // Forms\Components\TextInput::make('link')
-                //     ->columnSpan(1)
-                // ->required(),
-                // ->helperText('bla bla bla'),
-                // Forms\Components\DateTimePicker::make('start_date')
-                //     ->columnSpan(1),
-                // Forms\Components\DateTimePicker::make('end_date')
-                //     ->columnSpan(1),
-                Forms\Components\Toggle::make('hot_topic')
-                    ->columnSpan(1),
-                Forms\Components\Toggle::make('landing_banner')
-                    ->columnSpan(1),
->>>>>>> 547f47f (.)
 
-                SpatieMediaLibraryFileUpload::make('image')
-                    // ->image()
-                    // ->maxSize(5000)
-                    // ->multiple()
-                    // ->enableReordering()
-                    ->openable()
-                    ->downloadable()
-                    ->columnSpanFull()
-                    // ->collection('avatars')
-                    // ->conversion('thumbnail')
-                    ->disk('uploads')
-                    ->directory('photos')
-                    ->collection('banner'),
+                    SpatieMediaLibraryFileUpload::make('image')
+                        // ->image()
+                        // ->maxSize(5000)
+                        // ->multiple()
+                        // ->enableReordering()
+                        ->openable()
+                        ->downloadable()
+                        ->columnSpanFull()
+                        // ->collection('avatars')
+                        // ->conversion('thumbnail')
+                        ->disk('uploads')
+                        ->directory('photos')
+                        ->collection('banner'),
 
-<<<<<<< HEAD
                     // 'open_markets_count', // : 119,
                 ]),
-<<<<<<< HEAD
-=======
-                // 'open_markets_count', // : 119,
-            ]),
->>>>>>> 547f47f (.)
         ];
-=======
-<<<<<<< HEAD
-            ]);
-=======
-        ];
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
     }
 
     // public static function table(Table $table): Table

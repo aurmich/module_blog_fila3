@@ -21,24 +21,6 @@ class ArticleContent
     ): Builder {
         return Builder::make($name)
             ->blocks([
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 547f47f (.)
-                Title::make(context: $context),
-                Paragraph::make(context: $context),
-                // Image::make(context: $context),
-                ImageSpatie::make(context: $context),
-                ImagesGallery::make(context: $context),
-                Rating::make(context: $context),
-                Chart::make(context: $context),
-<<<<<<< HEAD
-=======
->>>>>>> bb321e5 (.)
-=======
->>>>>>> 547f47f (.)
                 Title::make(
     name: 'title'
 ),
@@ -58,14 +40,6 @@ class ArticleContent
                 Chart::make(
     name: 'chart'
 ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
-=======
- origin/dev
->>>>>>> 547f47f (.)
             ])
             ->collapsible();
     }

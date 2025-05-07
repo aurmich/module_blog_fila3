@@ -1,15 +1,7 @@
 {
     "name": "Blog",
     "alias": "blog",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "description": "Modulo per la gestione di blog, articoli, categorie e contenuti editoriali",
-=======
     "description": "",
->>>>>>> bb321e5 (.)
-=======
-    "description": "Modulo per la gestione di blog, articoli, categorie e contenuti editoriali",
->>>>>>> 547f47f (.)
     "keywords": [],
     "priority": 10,
     "providers": [

@@ -12,15 +12,7 @@ use Spatie\EventSourcing\Facades\Projectionist;
 
 class BlogServiceProvider extends XotBaseServiceProvider
 {
-<<<<<<< HEAD
     public string $name = 'Blog';
-=======
-<<<<<<< HEAD
-    public string $module_name = 'blog';
-=======
-    public string $name = 'Blog';
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
 
     protected string $module_dir = __DIR__;
 

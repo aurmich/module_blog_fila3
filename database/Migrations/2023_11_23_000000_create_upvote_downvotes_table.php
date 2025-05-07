@@ -29,7 +29,6 @@ return new class extends XotBaseMigration {
                 $table->timestamps();
                 $table->softDeletes();
                 
-<<<<<<< HEAD
                 //$table->unique(['post_id', 'user_id']);
                 //$table->foreignId('post_id'); // ->references('id')->on('posts')->onDelete('cascade');
                 //$table->foreignId('user_id'); // ->references('id')->on('users')->onDelete('cascade');
@@ -46,9 +45,6 @@ return new class extends XotBaseMigration {
                 //    $table->string('profile_photo_path', 2048)->nullable();
                 // }
                 $this->updateTimestamps(table: $table, hasSoftDeletes: true);
-=======
-                $table->unique(['post_id', 'user_id']);
->>>>>>> bb321e5 (.)
             }
         );
     }

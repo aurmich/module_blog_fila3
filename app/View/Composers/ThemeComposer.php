@@ -305,17 +305,6 @@ class ThemeComposer
     {
         $tmp = [];
         foreach ($rows->toArray() as $content) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            // @phpstan-ignore-next-line
-=======
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
-=======
-            // @phpstan-ignore-next-line
->>>>>>> 547f47f (.)
             if (is_array($content['title'])) {
                 $lang = app()->getLocale();
                 $content['title'] = $content['title'][$lang] ?? last($content['title']);
@@ -323,6 +312,7 @@ class ThemeComposer
             $tmp[] = ArticleData::from($content);
         }
 
+        // dddx($tmp);
         return $tmp;
     }
 

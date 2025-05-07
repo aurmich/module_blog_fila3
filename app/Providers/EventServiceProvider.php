@@ -14,14 +14,7 @@ use SocialiteProviders\Manager\SocialiteWasCalled;
 
 class EventServiceProvider extends ServiceProvider
 {
-<<<<<<< HEAD
     public string $name = 'Blog';
-=======
-<<<<<<< HEAD
-=======
-    public string $name = 'Blog';
->>>>>>> origin/dev
->>>>>>> bb321e5 (.)
     /**
      * The event to listener mappings for the application.
      *
