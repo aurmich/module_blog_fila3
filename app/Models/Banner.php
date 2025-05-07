@@ -75,17 +75,35 @@ use Spatie\Translatable\HasTranslations;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @mixin \Illuminate\Database\Eloquent\Model
+=======
+<<<<<<< HEAD
+ * @mixin \Eloquent
+=======
+ * @mixin \Illuminate\Database\Eloquent\Model
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
  */
 class Banner extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
     // use HasTranslations;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    /** @var list<string> */
+=======
+>>>>>>> bb321e5 (.)
     /**
      * Attributi assegnabili in massa (mass assignment).
      * @var list<string>
      */
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
     protected $fillable = [
         // "id", //: 40,
         // "desktop_thumbnail",//: "https://My_Company-media-production.s3.amazonaws.com/cache/7a/9c/7a9c8f672e3499d573f24901280952f3.jpg",
@@ -138,7 +156,17 @@ class Banner extends BaseModel implements HasMedia
      */
     public function registerMediaConversions(?Media $media = null): void
     {
+<<<<<<< HEAD
         $this->addMediaConversion('cover')
+=======
+<<<<<<< HEAD
+        // @phpstan-ignore-next-line
+        $this->addMediaConversion('cover')
+        // @phpstan-ignore-next-line
+=======
+        $this->addMediaConversion('cover')
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             // ->format(Manipulations::FORMAT_WEBP)
             ->width(320)
             ->height(200)

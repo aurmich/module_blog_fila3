@@ -29,16 +29,38 @@ class ShowArticleCommand extends Command
      */
     public function handle(): void
     {
+<<<<<<< HEAD
         $articleIdRaw = $this->argument('articleId');
         $articleId = is_scalar($articleIdRaw) ? (string)$articleIdRaw : '[ID non valido]';
+=======
+<<<<<<< HEAD
+        $articleId = (string) $this->argument('articleId');
+=======
+        $articleIdRaw = $this->argument('articleId');
+        $articleId = is_scalar($articleIdRaw) ? (string)$articleIdRaw : '[ID non valido]';
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
         Assert::notNull($article = Article::firstWhere(['id' => $articleId]), '['.__LINE__.']['.__FILE__.']');
 
         $ratings = $article->ratings()
             ->where('user_id', null)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+            ->get();
+
+        $this->info($article->title);
+=======
+>>>>>>> bb321e5 (.)
             ->get();
 
         $title = is_scalar($article->title) ? (string)$article->title : '[Titolo non valido]';
         $this->info($title);
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
         $header = ['id', 'title', 'is_winner', 'count', 'sum', 'avg', 'tot'];
         $rows = [];
         foreach ($ratings as $rating) {
@@ -67,9 +89,25 @@ class ShowArticleCommand extends Command
 
             $sum = $tmp->value_sum ?? 0;
             // $avg = $tmp->value_avg;
+<<<<<<< HEAD
             $avg = round($tmp->value_sum * 100 / $tmp->value_tot, 2);
             $count = $tmp->value_count;
             $tot = $tmp->value_tot;
+=======
+<<<<<<< HEAD
+            // @phpstan-ignore-next-line
+            $avg = round($tmp->value_sum * 100 / $tmp->value_tot, 2);
+            // @phpstan-ignore-next-line
+            $count = $tmp->value_count;
+            // @phpstan-ignore-next-line
+            $tot = $tmp->value_tot;
+            // @phpstan-ignore-next-line
+=======
+            $avg = round($tmp->value_sum * 100 / $tmp->value_tot, 2);
+            $count = $tmp->value_count;
+            $tot = $tmp->value_tot;
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             $data = [$rating->id, $rating->title, $rating->pivot->is_winner,  $count, $sum, $avg, $tot];
             $rows[] = $data;
         }

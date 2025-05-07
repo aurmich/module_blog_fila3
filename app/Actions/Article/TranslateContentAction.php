@@ -7,11 +7,23 @@ namespace Modules\Blog\Actions\Article;
 use Modules\Blog\Models\Article;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 use Webmozart\Assert\Assert;
 
 class TranslateContentAction
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> bb321e5 (.)
     use QueueableAction;
 
     /**
@@ -24,12 +36,23 @@ class TranslateContentAction
      * @param class-string $class
      * @return void
      */
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
     public function execute(string $model_class, string $article_id, array $locales, array $data, string $class): void
     {
         // dddx([app(GetModelClassByModelTypeAction::class)->execute($model_class), Article::class]);
         // dddx(app($class));
         Assert::isInstanceOf($model = app(GetModelByModelTypeAction::class)->execute($model_class, $article_id), app($class), '['.__LINE__.']['.__FILE__.']');
+<<<<<<< HEAD
         /** @var Article $model */
+=======
+<<<<<<< HEAD
+=======
+        /** @var Article $model */
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 
         Assert::isArray($model_contents = $model->toArray(), '['.__LINE__.']['.__FILE__.']');
 
@@ -42,6 +65,13 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // @phpstan-ignore-next-line
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             $model->content_blocks = $model_content;
         }
 
@@ -54,6 +84,13 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // @phpstan-ignore-next-line
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             $model->sidebar_blocks = $model_content;
         }
 
@@ -66,6 +103,13 @@ class TranslateContentAction
                     $model_content[$locale] = $model_content['it'];
                 }
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // @phpstan-ignore-next-line
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             $model->footer_blocks = $model_content;
         }
 

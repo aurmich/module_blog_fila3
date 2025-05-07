@@ -16,7 +16,15 @@ use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Illuminate\Support\Facades\File;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Modules\Blog\Actions\Banner\ImportBannerFromByJsonTextAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+=======
+<<<<<<< HEAD
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 
 class ListBanners extends XotBaseListRecords
 {
@@ -45,6 +53,27 @@ class ListBanners extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public function getListTableColumns(): array
+    {
+        return [
+            Tables\Columns\TextColumn::make('id')
+                ->label(static::trans('fields.id'))
+                ->sortable()
+                ->searchable(),
+            Tables\Columns\TextColumn::make('title')
+                ->label(static::trans('fields.title'))
+                ->sortable()
+                ->searchable(),
+            Tables\Columns\TextColumn::make('category.title')
+                ->label(static::trans('fields.category.title'))
+                ->sortable()
+                ->searchable(),
+            SpatieMediaLibraryImageColumn::make('image')
+=======
+>>>>>>> bb321e5 (.)
     /**
      * Definisce le colonne della tabella di elenco banner.
      *
@@ -66,6 +95,10 @@ class ListBanners extends XotBaseListRecords
                 ->sortable()
                 ->searchable(),
             'image' => SpatieMediaLibraryImageColumn::make('image')
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
                 ->label(static::trans('fields.image'))
                 ->collection('banner'),
         ];

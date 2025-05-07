@@ -305,6 +305,13 @@ class ThemeComposer
     {
         $tmp = [];
         foreach ($rows->toArray() as $content) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // @phpstan-ignore-next-line
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             if (is_array($content['title'])) {
                 $lang = app()->getLocale();
                 $content['title'] = $content['title'][$lang] ?? last($content['title']);

@@ -16,7 +16,15 @@ use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Modules\Blog\Actions\Article\ImportArticlesFromByJsonTextAction;
 use Modules\Blog\Filament\Resources\ArticleResource;
 use Modules\Blog\Models\Category;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+=======
+<<<<<<< HEAD
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 
 class ListArticles extends XotBaseListRecords
 {
@@ -24,6 +32,94 @@ class ListArticles extends XotBaseListRecords
 
     // protected static string $resource = ArticleResource::class;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public function getListTableColumns(): array
+    {
+        return
+        [
+            Tables\Columns\TextColumn::make('id'),
+            Tables\Columns\TextColumn::make('title')
+                ->wrap()
+                ->sortable()
+                ->searchable(),
+
+            Tables\Columns\TextColumn::make('category.title')
+                ->sortable()
+                ->searchable(),
+            Tables\Columns\TextColumn::make('published_at')
+                ->dateTime()
+                ->sortable(),
+
+            Tables\Columns\TextColumn::make('closed_at')
+                ->dateTime()
+                ->sortable(),
+            Tables\Columns\TextColumn::make('rewarded_at')
+                ->dateTime()
+                ->sortable(),
+
+            Tables\Columns\IconColumn::make('is_featured')
+                ->boolean()
+                ->sortable(),
+
+            // Tables\Columns\TextColumn::make('id')
+            //     ->label('My Status')
+            //     ->formatStateUsing(function ($state, Article $article) {
+            //         return $article->title . ' ' . $article->category->title;
+            //     }),
+
+            // Tables\Columns\ViewColumn::make('info')
+            //     ->view('blog::filament.tables.columns.article.info'),
+            // Tables\Columns\ViewColumn::make('status')
+            //     ->view('blog::filament.tables.columns.article.status'),
+
+            // Tables\Columns\Layout\Split::make([
+            //     // Tables\Columns\TextColumn::make('id'),
+            //     Tables\Columns\TextColumn::make('title')
+            //         ->sortable()
+            //         ->searchable(),
+
+            //     Tables\Columns\TextColumn::make('category.title')
+            //         ->sortable()
+            //         ->searchable(),
+            // ]),
+            // Tables\Columns\Layout\Split::make([
+            //     Tables\Columns\TextColumn::make('published_at')
+            //         ->dateTime()
+            //         ->sortable(),
+            //     Tables\Columns\TextColumn::make('closed_at')
+            //         ->dateTime()
+            //         ->sortable(),
+            //     Tables\Columns\IconColumn::make('is_featured')
+            //         ->boolean()
+            //         ->sortable(),
+            // ]),
+        ];
+    }
+
+    public function getTableActions(): array
+    {
+        return [
+            /*
+            Tables\Actions\ActionGroup::make([
+                ListPreviewAction::make(),
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+            ]),
+            */
+            Tables\Actions\EditAction::make()->label(''),
+            Tables\Actions\ViewAction::make()->label(''),
+            Tables\Actions\DeleteAction::make()->label(''),
+        ];
+    }
+
+    public function getTableBulkActions(): array
+    {
+        return [
+            Tables\Actions\DeleteBulkAction::make(),
+=======
+>>>>>>> bb321e5 (.)
     /**
      * @return array<string, mixed>
      */
@@ -56,6 +152,32 @@ class ListArticles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
+     */
+    public function getTableActions(): array
+    {
+        return [
+            'edit' => Tables\Actions\EditAction::make()->label(''),
+            'view' => Tables\Actions\ViewAction::make()->label(''),
+            'delete' => Tables\Actions\DeleteAction::make()->label(''),
+        ];
+    }
+
+    /**
+     * @return array<string, \Filament\Tables\Actions\BulkAction>
+     */
+    public function getTableBulkActions(): array
+    {
+        return [
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
+>>>>>>> origin/dev
+        ];
+    }
+
+>>>>>>> bb321e5 (.)
     public function getTableFilters(): array
     {
         return [
@@ -73,7 +195,13 @@ class ListArticles extends XotBaseListRecords
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
             ->filters($this->getTableFilters())
+<<<<<<< HEAD
             ->actionsPosition(ActionsPosition::BeforeColumns)
+=======
+            ->bulkActions($this->getTableBulkActions())
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->actions($this->getTableActions())
+>>>>>>> bb321e5 (.)
             ->defaultSort('published_at', 'desc');
     }
 

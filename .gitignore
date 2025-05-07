@@ -49,6 +49,9 @@ vendor
 vendor/
 build/docs/cache/
 cache/
+<<<<<<< HEAD
 -e 
 # PHPStan documentation
 docs/phpstan/
+=======
+>>>>>>> bb321e5 (.)

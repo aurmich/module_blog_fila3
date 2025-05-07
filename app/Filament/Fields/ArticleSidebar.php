@@ -21,6 +21,18 @@ class ArticleSidebar
     ): Builder {
         return Builder::make($name)
             ->blocks([
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                Title::make(context: $context),
+                Paragraph::make(context: $context),
+                // Image::make(context: $context),
+                ImageSpatie::make(context: $context),
+                ImagesGallery::make(context: $context),
+                Rating::make(context: $context),
+                Chart::make(context: $context),
+=======
+>>>>>>> bb321e5 (.)
                 Title::make(
     name: 'title'
 ),
@@ -40,6 +52,10 @@ class ArticleSidebar
                 Chart::make(
     name: 'chart'
 ),
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
             ])
             ->collapsible();
     }

@@ -9,12 +9,38 @@ use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+=======
+<<<<<<< HEAD
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 
 class ListCategories extends XotBaseListRecords
 {
     use ListRecords\Concerns\Translatable;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public function getListTableColumns(): array
+    {
+        return [
+            Tables\Columns\IconColumn::make('icon')
+                ->icon(fn ($state) => $state),
+            Tables\Columns\TextColumn::make('title')->searchable()
+                ->sortable(),
+            Tables\Columns\TextColumn::make('parent.title')->searchable()
+                ->sortable(),
+            // Tables\Columns\TextColumn::make('updated_at')
+            //     ->sortable()
+            //     ->dateTime(),
+            SpatieMediaLibraryImageColumn::make('image')->collection('category'),
+=======
+>>>>>>> bb321e5 (.)
     /**
      * @return array<string, mixed>
      */
@@ -31,6 +57,10 @@ class ListCategories extends XotBaseListRecords
                 ->sortable(),
             'image' => SpatieMediaLibraryImageColumn::make('image')
                 ->collection('category'),
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
         ];
     }
 

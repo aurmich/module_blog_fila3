@@ -22,6 +22,37 @@ class TextWidgetResource extends XotBaseResource
 
     // protected static ?string $navigationGroup = 'Content';
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+                Forms\Components\TextInput::make('key')
+                    ->required()
+                    ->maxLength(255),
+                // Forms\Components\FileUpload::make('image'),
+                SpatieMediaLibraryFileUpload::make('image')
+                    // ->image()
+                    // ->maxSize(5000)
+                    // ->multiple()
+                    // ->enableReordering()
+                    ->enableOpen()
+                    ->enableDownload()
+                    ->columnSpanFull()
+                    // ->collection('avatars')
+                    // ->conversion('thumbnail')
+                    ->disk('uploads')
+                    ->directory('photos'),
+                Forms\Components\TextInput::make('title')
+                    ->maxLength(2048),
+                Forms\Components\RichEditor::make('content'),
+                Forms\Components\Toggle::make('active')
+                    ->required(),
+            ])->columns(1);
+=======
+>>>>>>> bb321e5 (.)
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
@@ -59,6 +90,10 @@ class TextWidgetResource extends XotBaseResource
             Forms\Components\Toggle::make('active')
                 ->required(),
         ];
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
     }
 
     public static function table(Table $table): Table

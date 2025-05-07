@@ -59,6 +59,31 @@ class ArticleData extends Data
     public static function fromArray(array $data): self
     {
         return new self(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            bet_end_date: isset($data['bet_end_date']) ? Carbon::parse($data['bet_end_date']) : null,
+            event_start_date: isset($data['event_start_date']) ? Carbon::parse($data['event_start_date']) : null,
+            event_end_date: isset($data['event_end_date']) ? Carbon::parse($data['event_end_date']) : null,
+            category: $data['category'] ?? [],
+            title: (string)($data['title'] ?? ''),
+            slug: (string)($data['slug'] ?? ''),
+            status: ArticleStatus::fromString((string)($data['status'] ?? 'draft')),
+            status_display: (string)($data['status_display'] ?? ''),
+            is_wagerable: (bool)($data['is_wagerable'] ?? false),
+            brier_score: (float)($data['brier_score'] ?? 0.0),
+            brier_score_play_money: (float)($data['brier_score_play_money'] ?? 0.0),
+            brier_score_real_money: (float)($data['brier_score_real_money'] ?? 0.0),
+            wagers_count: (int)($data['wagers_count'] ?? 0),
+            wagers_count_canonical: (int)($data['wagers_count_canonical'] ?? 0),
+            wagers_count_total: (int)($data['wagers_count_total'] ?? 0),
+            wagers: $data['wagers'] ?? [],
+            volume_play_money: (float)($data['volume_play_money'] ?? 0.0),
+            volume_real_money: (float)($data['volume_real_money'] ?? 0.0),
+            outcomes: $data['outcomes'] ?? [],
+            thumbnail_2x: $data['thumbnail_2x'] ?? null,
+=======
+>>>>>>> bb321e5 (.)
             bet_end_date: (isset($data['bet_end_date']) && (is_string($data['bet_end_date']) || $data['bet_end_date'] instanceof \DateTimeInterface)) ? Carbon::parse($data['bet_end_date']) : null,
             event_start_date: (isset($data['event_start_date']) && (is_string($data['event_start_date']) || $data['event_start_date'] instanceof \DateTimeInterface)) ? Carbon::parse($data['event_start_date']) : null,
             event_end_date: (isset($data['event_end_date']) && (is_string($data['event_end_date']) || $data['event_end_date'] instanceof \DateTimeInterface)) ? Carbon::parse($data['event_end_date']) : null,
@@ -79,6 +104,10 @@ class ArticleData extends Data
             volume_real_money: is_numeric($data['volume_real_money'] ?? null) ? (float)$data['volume_real_money'] : 0.0,
             outcomes: is_array($data['outcomes'] ?? null) ? $data['outcomes'] : [],
             thumbnail_2x: is_string($data['thumbnail_2x'] ?? null) ? $data['thumbnail_2x'] : null,
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
         );
     }
 } 

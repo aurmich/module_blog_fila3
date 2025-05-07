@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://tailblocks.cc/
 https://github.com/mertJF/tailblocks
 //-----------------------------------------
@@ -50,3 +51,8 @@ https://betterprogramming.pub/10-open-source-libraries-for-tailwind-css-componen
 
 
 
+=======
+## Esempio di Blocchi
+
+wip
+>>>>>>> bb321e5 (.)

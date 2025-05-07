@@ -28,6 +28,15 @@ class BannerResource extends XotBaseResource
     //     return ['it', 'en'];
     // }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+=======
+>>>>>>> bb321e5 (.)
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
@@ -43,6 +52,10 @@ class BannerResource extends XotBaseResource
     public static function getFormFields(): array
     {
         return [
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
                 Forms\Components\Grid::make()->columns(2)->schema([
                     Forms\Components\TextInput::make('title')
                         ->label(static::trans('fields.title'))
@@ -86,7 +99,15 @@ class BannerResource extends XotBaseResource
 
                     // 'open_markets_count', // : 119,
                 ]),
+<<<<<<< HEAD
         ];
+=======
+<<<<<<< HEAD
+            ]);
+=======
+        ];
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
     }
 
     // public static function table(Table $table): Table

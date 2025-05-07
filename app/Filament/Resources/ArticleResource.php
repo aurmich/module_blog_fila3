@@ -165,6 +165,13 @@ class ArticleResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> bb321e5 (.)
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
@@ -172,4 +179,8 @@ class ArticleResource extends XotBaseResource
     {
         return static::getFormFields();
     }
+<<<<<<< HEAD
+=======
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
 }

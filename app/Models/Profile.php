@@ -126,7 +126,15 @@ class Profile extends BaseProfile
     ];
 
     /**
+<<<<<<< HEAD
      * @return HasMany<Article, Profile>
+=======
+<<<<<<< HEAD
+     * @return HasMany<Article>
+=======
+     * @return HasMany<Article, Profile>
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
      */
     public function articles(): HasMany
     {
@@ -134,7 +142,15 @@ class Profile extends BaseProfile
     }
 
     /**
+<<<<<<< HEAD
      * @return HasMany<Transaction, Profile>
+=======
+<<<<<<< HEAD
+     * @return HasMany<Transaction>
+=======
+     * @return HasMany<Transaction, Profile>
+>>>>>>> origin/dev
+>>>>>>> bb321e5 (.)
      */
     public function transanctions(): HasMany
     {
