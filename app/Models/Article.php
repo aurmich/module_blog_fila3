@@ -329,6 +329,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
      * return \Illuminate\Database\Eloquent\Collection<int, Article>.
@@ -341,11 +342,15 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
 =======
 >>>>>>> bb321e5 (.)
      * Restituisce tutti i feed item.
+=======
+     * return \Illuminate\Database\Eloquent\Collection<int, Article>.
+>>>>>>> 547f47f (.)
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, Article>
+     * @return \Illuminate\Support\Collection<int, Article>
      */
-    public static function getAllFeedItems(): \Illuminate\Database\Eloquent\Collection
+    public static function getAllFeedItems()
     {
+<<<<<<< HEAD
         return static::latest()->take(150)->get();
     }
 
@@ -362,6 +367,9 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
 =======
 >>>>>>> origin/dev
 >>>>>>> bb321e5 (.)
+=======
+        return self::latest()->take(150)->get();
+>>>>>>> 547f47f (.)
     }
 
     public function sluggable(): array

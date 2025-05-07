@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 547f47f (.)
 https://tailblocks.cc/
 https://github.com/mertJF/tailblocks
 //-----------------------------------------
@@ -51,8 +57,20 @@ https://betterprogramming.pub/10-open-source-libraries-for-tailwind-css-componen
 
 
 
+<<<<<<< HEAD
 =======
 ## Esempio di Blocchi
 
 wip
 >>>>>>> bb321e5 (.)
+=======
+
+### Versione Alternativa
+
+## Esempio di Blocchi
+
+wip
+
+---
+
+>>>>>>> 547f47f (.)

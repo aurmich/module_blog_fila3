@@ -5,10 +5,23 @@
 
 ## Data Analisi
 <<<<<<< HEAD
+<<<<<<< HEAD
 Data: $(date '+%Y-%m-%d')
 =======
+=======
+
+### Versione HEAD
+
+Data: $(date '+%Y-%m-%d')
+
+### Versione Alternativa
+
+>>>>>>> 547f47f (.)
 Data: 2025-04-16
 >>>>>>> origin/dev
+
+---
+
 
 ## Errori Riscontrati
 
@@ -31,11 +44,23 @@ Modules\Lang\Models\Contracts\HasTranslationsContract::getTranslation(string $ke
 2. Assicurarsi che il valore restituito sia effettivamente compatibile con i tipi dichiarati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 547f47f (.)
 ## Impatto delle Correzioni
 - La correzione garantirà la type safety
 - Potrebbe richiedere modifiche alla logica interna del metodo
 - Non dovrebbe influire sulla funzionalità del sito
+<<<<<<< HEAD
 =======
+=======
+
+### Versione Alternativa
+
+>>>>>>> 547f47f (.)
 ### 2. Metodo Astratto non Implementato
 **File**: `app/Filament/Resources/ArticleResource.php`
 **Errore**: Classe contiene un metodo astratto e deve quindi essere dichiarata astratta o implementare il metodo mancante
@@ -140,15 +165,30 @@ Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::for
 - Migliorerà la manutenibilità del codice seguendo le convenzioni del framework LARAXOT
 >>>>>>> origin/dev
 
+---
+
+
 ## Collegamenti
 - [Documentazione del Modulo](../README.md)
 - [Contratto HasTranslations](../../Lang/docs/contracts/HasTranslationsContract.md)
 - [Best Practices Traduzioni](../../../docs/translations/best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+>>>>>>> 547f47f (.)
 - [Best Practices Filament](../filament/BEST-PRACTICES.md)
 - [Documentazione XotBaseResource](../../Xot/docs/filament/resources/XotBaseResource.md)
 >>>>>>> origin/dev
+
+---
+
 
 ## Errori Riscontrati e Soluzioni
 
@@ -164,10 +204,22 @@ Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::for
 4. Implementazione di interfacce per la definizione dei contratti
 5. Utilizzo di Spatie Queueable Actions per le operazioni asincrone
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+>>>>>>> 547f47f (.)
 6. Rispetto delle convenzioni di visibilità dei metodi nelle classi che estendono classi base
 7. Riutilizzo del codice esistente per evitare duplicazioni
 >>>>>>> origin/dev
+
+---
+
 
 ## Note Importanti
 - Assicurarsi che tutti i metodi abbiano tipi di ritorno espliciti
@@ -175,4 +227,3 @@ Cannot override final method Modules\Xot\Filament\Resources\XotBaseResource::for
 - Implementare correttamente le interfacce
 - Documentare i metodi e le loro responsabilità
 - Gestire correttamente le eccezioni
-- Utilizzare Spatie Queueable Actions per le operazioni che richiedono tempo 

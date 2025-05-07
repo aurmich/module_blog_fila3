@@ -28,8 +28,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListBanners extends XotBaseListRecords
 {
-    // protected static string $resource = BannerResource::class;
-
     protected function getHeaderActions(): array
     {
         return [

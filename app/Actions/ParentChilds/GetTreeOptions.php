@@ -6,6 +6,7 @@ namespace Modules\Blog\Actions\ParentChilds;
 
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Kalnoy\Nestedset\NodeTrait;
 =======
 <<<<<<< HEAD
@@ -13,12 +14,15 @@ use Kalnoy\Nestedset\NodeTrait;
 use Kalnoy\Nestedset\NodeTrait;
 >>>>>>> origin/dev
 >>>>>>> bb321e5 (.)
+=======
+>>>>>>> 547f47f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class GetTreeOptions
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -37,6 +41,11 @@ class GetTreeOptions
 =======
 >>>>>>> origin/dev
 >>>>>>> bb321e5 (.)
+=======
+    public function execute(Model $model): array
+    {
+        // @phpstan-ignore-next-line
+>>>>>>> 547f47f (.)
         $models = $model::tree()->get()->toTree();
         $results = [];
         foreach ($models as $mod) {

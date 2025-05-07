@@ -39,9 +39,6 @@ class ListProfiles extends UserListProfiles
      * Sovrascrive la visibilità per rispettare la signature della classe base.
      * @return array<string, mixed>
      */
-    /**
-     * @return array<string, mixed>
-     */
     public function getTableActions(): array
 <<<<<<< HEAD
 =======

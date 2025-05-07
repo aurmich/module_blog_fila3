@@ -121,9 +121,6 @@ class ListArticles extends XotBaseListRecords
 =======
 >>>>>>> bb321e5 (.)
     /**
-     * @return array<string, mixed>
-     */
-    /**
      * @return array<string, \Filament\Tables\Columns\Column>
      */
     public function getListTableColumns(): array

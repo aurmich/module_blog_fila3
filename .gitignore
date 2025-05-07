@@ -50,8 +50,13 @@ vendor/
 build/docs/cache/
 cache/
 <<<<<<< HEAD
+<<<<<<< HEAD
 -e 
 # PHPStan documentation
 docs/phpstan/
 =======
 >>>>>>> bb321e5 (.)
+=======
+# PHPStan documentation
+docs/phpstan/
+>>>>>>> 547f47f (.)

@@ -17,6 +17,10 @@ use Spatie\QueueableAction\QueueableAction;
 >>>>>>> bb321e5 (.)
 use Webmozart\Assert\Assert;
 
+/**
+ * Classe per la traduzione dei contenuti degli articoli.
+ * Gestisce la traduzione di content_blocks, sidebar_blocks e footer_blocks.
+ */
 class TranslateContentAction
 {
 <<<<<<< HEAD
@@ -29,11 +33,11 @@ class TranslateContentAction
     /**
      * Esegue la traduzione dei contenuti di un articolo.
      *
-     * @param string $model_class
-     * @param string $article_id
-     * @param list<string> $locales
-     * @param array<string,mixed> $data
-     * @param class-string $class
+     * @param string $model_class La classe del modello
+     * @param string $article_id ID dell'articolo
+     * @param list<string> $locales Lista delle lingue da tradurre
+     * @param array<string,mixed> $data Dati aggiuntivi per la traduzione
+     * @param class-string $class Classe del modello
      * @return void
      */
 <<<<<<< HEAD
@@ -42,8 +46,6 @@ class TranslateContentAction
 >>>>>>> bb321e5 (.)
     public function execute(string $model_class, string $article_id, array $locales, array $data, string $class): void
     {
-        // dddx([app(GetModelClassByModelTypeAction::class)->execute($model_class), Article::class]);
-        // dddx(app($class));
         Assert::isInstanceOf($model = app(GetModelByModelTypeAction::class)->execute($model_class, $article_id), app($class), '['.__LINE__.']['.__FILE__.']');
 <<<<<<< HEAD
         /** @var Article $model */
