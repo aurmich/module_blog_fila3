@@ -22,19 +22,17 @@ class BannerFactory extends Factory
     /**
      * Define the model's default state.
      *
-<<<<<<< HEAD
-     * @return array
-     */
-    public function definition()
-=======
      * @return array<string, mixed>
      */
     public function definition(): array
->>>>>>> 18921bb (.)
     {
         return [
-            'title' => fake()->sentence,
-            // 'slug' => $this->faker->slug,
+            'title' => fake()->sentence(),
+            'slug' => fake()->slug(2),
+            'is_active' => fake()->boolean(),
+            'position' => fake()->numberBetween(1, 100),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }
