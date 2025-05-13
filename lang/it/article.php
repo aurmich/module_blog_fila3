@@ -64,10 +64,14 @@ return array (
     'fileContent' => 
     array (
       'label' => 'fileContent',
+      'description' => 'fileContent',
+      'helper_text' => 'fileContent',
+      'placeholder' => 'fileContent',
     ),
     'file' => 
     array (
       'label' => 'file',
+      'description' => 'file',
     ),
     'main_image_upload' => 
     array (

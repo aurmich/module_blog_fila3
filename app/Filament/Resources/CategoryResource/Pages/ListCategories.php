@@ -18,7 +18,7 @@ class ListCategories extends XotBaseListRecords
     /**
      * @return array<string, mixed>
      */
-    public function getListTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
             'icon' => Tables\Columns\IconColumn::make('icon')

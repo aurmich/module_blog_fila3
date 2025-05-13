@@ -17,7 +17,7 @@ class ListTextWidgets extends XotBaseListRecords
     /**
      * @return array<string, mixed>
      */
-    public function getListTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
             'id' => \Filament\Tables\Columns\TextColumn::make('id')->sortable(),
