@@ -18,11 +18,15 @@ class ListCategories extends XotBaseListRecords
     /**
      * @return array<string, mixed>
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
     public function getListTableColumns(): array
 >>>>>>> 55e41ec (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'icon' => Tables\Columns\IconColumn::make('icon')

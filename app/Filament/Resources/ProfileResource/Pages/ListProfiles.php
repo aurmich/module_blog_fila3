@@ -20,11 +20,15 @@ class ListProfiles extends UserListProfiles
     //    ];
     // }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
     protected function getTableColumns(): array
 >>>>>>> 55e41ec (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         $res = parent::getTableColumns();
 

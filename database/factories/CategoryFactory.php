@@ -22,6 +22,7 @@ class CategoryFactory extends Factory
     /**
      * Define the model's default state.
      *
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      * @return array<string, mixed>
      */
@@ -31,6 +32,11 @@ class CategoryFactory extends Factory
      */
     public function definition()
 >>>>>>> 55e41ec (.)
+=======
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+>>>>>>> Stashed changes
     {
         return [
             'title' => fake()->sentence,

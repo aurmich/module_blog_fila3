@@ -17,11 +17,15 @@ class ListTextWidgets extends XotBaseListRecords
     /**
      * @return array<string, mixed>
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public function getTableColumns(): array
 =======
     public function getListTableColumns(): array
 >>>>>>> 55e41ec (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> Stashed changes
     {
         return [
             'id' => \Filament\Tables\Columns\TextColumn::make('id')->sortable(),

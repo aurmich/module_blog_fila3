@@ -64,20 +64,30 @@ return array (
     'fileContent' => 
     array (
       'label' => 'fileContent',
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       'description' => 'fileContent',
       'helper_text' => 'fileContent',
       'placeholder' => 'fileContent',
 =======
 >>>>>>> 55e41ec (.)
+=======
+      'description' => 'fileContent',
+      'helper_text' => 'fileContent',
+      'placeholder' => 'fileContent',
+>>>>>>> Stashed changes
     ),
     'file' => 
     array (
       'label' => 'file',
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       'description' => 'file',
 =======
 >>>>>>> 55e41ec (.)
+=======
+      'description' => 'file',
+>>>>>>> Stashed changes
     ),
     'main_image_upload' => 
     array (
