@@ -22,9 +22,15 @@ class CategoryFactory extends Factory
     /**
      * Define the model's default state.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public function definition(): array
+=======
+     * @return array
+     */
+    public function definition()
+>>>>>>> 55e41ec (.)
     {
         return [
             'title' => fake()->sentence,

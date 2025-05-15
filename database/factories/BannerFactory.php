@@ -22,6 +22,7 @@ class BannerFactory extends Factory
     /**
      * Define the model's default state.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public function definition(): array
@@ -33,6 +34,15 @@ class BannerFactory extends Factory
             'position' => fake()->numberBetween(1, 100),
             'created_at' => now(),
             'updated_at' => now(),
+=======
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'title' => fake()->sentence,
+            // 'slug' => $this->faker->slug,
+>>>>>>> 55e41ec (.)
         ];
     }
 }

@@ -64,14 +64,20 @@ return array (
     'fileContent' => 
     array (
       'label' => 'fileContent',
+<<<<<<< HEAD
       'description' => 'fileContent',
       'helper_text' => 'fileContent',
       'placeholder' => 'fileContent',
+=======
+>>>>>>> 55e41ec (.)
     ),
     'file' => 
     array (
       'label' => 'file',
+<<<<<<< HEAD
       'description' => 'file',
+=======
+>>>>>>> 55e41ec (.)
     ),
     'main_image_upload' => 
     array (

@@ -20,7 +20,11 @@ class ListProfiles extends UserListProfiles
     //    ];
     // }
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    protected function getTableColumns(): array
+>>>>>>> 55e41ec (.)
     {
         $res = parent::getTableColumns();
 

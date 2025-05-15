@@ -50,7 +50,11 @@ class ListBanners extends XotBaseListRecords
      *
      * @return array<string, \Filament\Tables\Columns\Column>
      */
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> 55e41ec (.)
     {
         return [
             'id' => Tables\Columns\TextColumn::make('id')
