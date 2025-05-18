@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'actions' => 
   array (
     'activeLocale' => 
@@ -23,6 +25,7 @@
     'closed_at' => 
     array (
       'label' => 'closed_at',
+      'description' => 'closed_at',
     ),
   ),
-);
+);

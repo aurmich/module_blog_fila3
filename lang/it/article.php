@@ -72,10 +72,13 @@ return array (
     array (
       'label' => 'file',
       'description' => 'file',
+      'helper_text' => 'file',
     ),
     'main_image_upload' =>
     array (
       'label' => 'main_image_upload',
+      'description' => 'main_image_upload',
+      'helper_text' => 'main_image_upload',
     ),
     'main_image_url' =>
     array (

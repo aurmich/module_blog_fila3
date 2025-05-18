@@ -1,4 +1,6 @@
-<?php return array (
+<?php
+
+return array (
   'actions' => 
   array (
     'activeLocale' => 
@@ -27,6 +29,8 @@
     'footer_blocks' => 
     array (
       'label' => 'footer_blocks',
+      'description' => 'footer_blocks',
+      'helper_text' => 'footer_blocks',
     ),
   ),
-);
+);

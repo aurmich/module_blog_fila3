@@ -24,6 +24,8 @@ return array (
     'image' => 
     array (
       'label' => 'image',
+      'description' => 'image',
+      'helper_text' => 'image',
     ),
     'description' => 
     array (
