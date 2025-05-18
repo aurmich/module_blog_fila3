@@ -26,22 +26,35 @@ return array (
       'label' => 'image',
       'description' => 'image',
       'helper_text' => 'image',
+      'placeholder' => 'image',
     ),
     'description' => 
     array (
       'label' => 'description',
+      'description' => 'description',
+      'helper_text' => 'description',
+      'placeholder' => 'description',
     ),
     'parent_id' => 
     array (
       'label' => 'parent_id',
+      'description' => 'parent_id',
+      'placeholder' => 'parent_id',
+      'helper_text' => 'parent_id',
     ),
     'slug' => 
     array (
       'label' => 'slug',
+      'placeholder' => 'slug',
+      'helper_text' => 'slug',
+      'description' => 'slug',
     ),
     'title' => 
     array (
       'label' => 'title',
+      'placeholder' => 'title',
+      'helper_text' => 'title',
+      'description' => 'title',
     ),
     'parent' => 
     array (

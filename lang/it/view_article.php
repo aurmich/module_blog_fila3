@@ -26,6 +26,8 @@ return array (
     array (
       'label' => 'closed_at',
       'description' => 'closed_at',
+      'helper_text' => 'closed_at',
+      'placeholder' => 'closed_at',
     ),
   ),
 );

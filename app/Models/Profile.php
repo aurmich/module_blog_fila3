@@ -6,13 +6,14 @@ namespace Modules\Blog\Models;
 
 // use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 // use Astrotomic\Translatable\Translatable;
-use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Modules\Rating\Models\Rating;
+use Modules\User\Models\BaseProfile;
+use Modules\Rating\Models\RatingMorph;
+use Modules\Rating\Models\Traits\HasRating;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Modules\Rating\Models\Rating;
-use Modules\Rating\Models\RatingMorph;
-use Modules\User\Models\BaseProfile;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 
 /**
  * Modules\Blog\Models\Profile.
@@ -100,6 +101,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  */
 class Profile extends BaseProfile
 {
+    use HasRating;
     /** @var array<string, string> */
     public $casts = [
         'extra' => SchemalessAttributes::class,
@@ -158,7 +160,8 @@ class Profile extends BaseProfile
         return $this->getFirstMediaUrl('photo_profile');
     }
 
-    public function ratings(): HasManyThrough
+    /*
+    public function rating111s(): HasManyThrough
     {
         $firstKey = 'user_id';
         $secondKey = 'id';
@@ -173,7 +176,7 @@ class Profile extends BaseProfile
     {
         return $this->hasMany(RatingMorph::class, 'user_id', 'user_id');
     }
-
+    */
     // : int
     public function getArticleTraded(): \Illuminate\Support\Collection
     {
