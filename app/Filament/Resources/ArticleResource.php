@@ -77,12 +77,15 @@ class ArticleResource extends XotBaseResource
                     ->required(),
                 */
                 Forms\Components\Select::make('category_id')
-                            // ->multiple()
+                    // ->multiple()
                     ->required()
-                     // ->relationship('categories', 'title')
-                    // ->relationship('category', 'title')
+                    // ->relationship('categories', 'title')
                     ->options(Category::getTreeCategoryOptions())
-                    ->createOptionForm(CategoryResource::getFormFields()),
+                    ->createOptionForm(CategoryResource::getFormFields())
+                    ->createOptionUsing(function (array $data) {
+                        $category = Category::create($data);
+                        return $category->getKey();
+                    }),
                 // SpatieTagsInput::make('tags'),
                 Forms\Components\Toggle::make('is_featured')
                     ->columnSpanFull()
