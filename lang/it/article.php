@@ -1,17 +1,17 @@
 <?php
 
 return array (
-  'navigation' => 
+  'navigation' =>
   array (
     'name' => 'Articolo',
     'plural' => 'Articoli',
-    'group' => 
+    'group' =>
     array (
       'name' => 'Content',
     ),
     'sort' => 91,
   ),
-  'rating' => 
+  'rating' =>
   array (
     'no_import' => 'Nessuna cifra inserita',
     'import_zero' => 'Nessuna cifra inserita',
@@ -24,124 +24,127 @@ return array (
   'your_bet' => 'La tua previsione',
   'your_amount' => 'Previsione',
   'if_win' => 'Se vinci',
-  'fields' => 
+  'fields' =>
   array (
-    'id' => 
+    'id' =>
     array (
       'label' => 'id',
     ),
-    'title' => 
+    'title' =>
     array (
       'label' => 'title',
       'placeholder' => 'title',
       'helper_text' => 'title',
       'description' => 'title',
     ),
-    'category' => 
+    'category' =>
     array (
-      'title' => 
+      'title' =>
       array (
         'label' => 'category.title',
       ),
     ),
-    'published_at' => 
+    'published_at' =>
     array (
       'label' => 'published_at',
       'placeholder' => 'published_at',
       'helper_text' => 'published_at',
       'description' => 'published_at',
     ),
-    'closed_at' => 
+    'closed_at' =>
     array (
       'label' => 'closed_at',
       'placeholder' => 'closed_at',
       'helper_text' => 'closed_at',
       'description' => 'closed_at',
     ),
-    'rewarded_at' => 
+    'rewarded_at' =>
     array (
       'label' => 'Premiato il',
       'placeholder' => 'rewarded_at',
       'helper_text' => 'rewarded_at',
       'description' => 'rewarded_at',
     ),
-    'is_featured' => 
+    'is_featured' =>
     array (
       'label' => 'is_featured',
       'description' => 'is_featured',
       'placeholder' => 'is_featured',
       'helper_text' => 'is_featured',
     ),
-    'Categoria' => 
+    'Categoria' =>
     array (
       'label' => 'Categoria',
     ),
-    'fileContent' => 
+    'fileContent' =>
     array (
       'label' => 'fileContent',
       'description' => 'fileContent',
       'helper_text' => 'fileContent',
       'placeholder' => 'fileContent',
     ),
-    'file' => 
+    'file' =>
     array (
       'label' => 'file',
       'description' => 'file',
+<<<<<<< Updated upstream
       'helper_text' => 'file',
       'placeholder' => 'file',
+=======
+>>>>>>> Stashed changes
     ),
-    'main_image_upload' => 
+    'main_image_upload' =>
     array (
       'label' => 'main_image_upload',
       'description' => 'main_image_upload',
       'helper_text' => 'main_image_upload',
       'placeholder' => 'main_image_upload',
     ),
-    'main_image_url' => 
+    'main_image_url' =>
     array (
       'label' => 'main_image_url',
       'description' => 'main_image_url',
       'helper_text' => 'main_image_url',
       'placeholder' => 'main_image_url',
     ),
-    'category_id' => 
+    'category_id' =>
     array (
       'label' => 'category_id',
       'placeholder' => 'category_id',
       'helper_text' => 'category_id',
       'description' => 'category_id',
     ),
-    'slug' => 
+    'slug' =>
     array (
       'label' => 'slug',
       'placeholder' => 'slug',
       'helper_text' => 'slug',
       'description' => 'slug',
     ),
-    'edit' => 
+    'edit' =>
     array (
       'label' => 'edit',
     ),
-    'view' => 
+    'view' =>
     array (
       'label' => 'view',
     ),
-    'delete' => 
+    'delete' =>
     array (
       'label' => 'delete',
     ),
   ),
-  'actions' => 
+  'actions' =>
   array (
-    'import' => 
+    'import' =>
     array (
       'label' => 'import',
     ),
-    'create' => 
+    'create' =>
     array (
       'label' => 'create',
     ),
-    'activeLocale' => 
+    'activeLocale' =>
     array (
       'label' => 'activeLocale',
     ),
