@@ -87,11 +87,8 @@ return array (
     array (
       'label' => 'file',
       'description' => 'file',
-<<<<<<< Updated upstream
       'helper_text' => 'file',
       'placeholder' => 'file',
-=======
->>>>>>> Stashed changes
     ),
     'main_image_upload' =>
     array (
