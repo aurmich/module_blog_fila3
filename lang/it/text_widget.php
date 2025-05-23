@@ -10,6 +10,8 @@ return array (
       'name' => 'Content',
     ),
     'sort' => 97,
+    'icon' => 'text widget.navigation',
+    'label' => 'text widget.navigation',
   ),
   'actions' => 
   array (

@@ -10,6 +10,8 @@ return array (
       'name' => 'Content',
     ),
     'sort' => 21,
+    'icon' => 'category.navigation',
+    'label' => 'category.navigation',
   ),
   'show' => 
   array (

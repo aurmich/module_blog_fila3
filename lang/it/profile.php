@@ -10,6 +10,8 @@ return array (
       'name' => 'Content',
     ),
     'sort' => 56,
+    'icon' => 'profile.navigation',
+    'label' => 'profile.navigation',
   ),
   'fields' => 
   array (

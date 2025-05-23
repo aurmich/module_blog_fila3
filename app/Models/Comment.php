@@ -76,7 +76,6 @@ use Modules\Xot\Contracts\UserContract;
  * @property \Modules\Xot\Contracts\ProfileContract|null                                                                $updater
  * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property int|null                                                                                                   $media_count
- *                                                                                                                                   >>>>>>> origin/master
  *
  * @mixin \Eloquent
  */

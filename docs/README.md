@@ -1,5 +1,26 @@
 # Modulo Blog
 
+## Obiettivi Funzionali
+- Gestione di articoli e commenti
+- Supporto per categorie e tag
+- Integrazione con Filament per l'amministrazione
+
+## Decisioni Architetturali
+- Utilizzo di XotBaseResource per le risorse Filament
+- Implementazione di traduzioni tramite file di lingua
+- Gestione delle relazioni tra articoli e commenti
+
+## Collegamenti
+- [Documentazione Principale](../../docs/README.md)
+- [Regole Globali](../../docs/REGOLE_GLOBALI.md)
+- [Convenzioni di Denominazione](../../docs/NAMING_CONVENTIONS.md)
+
+## Backlink
+- [Modulo User](../User/docs/README.md)
+- [Modulo Cms](../Cms/docs/README.md)
+- [Modulo Xot](../Xot/docs/README.md)
+- [Modulo Predict](../Predict/docs/README.md)
+
 ## Indice
 - [Descrizione](#descrizione)
 - [Struttura](#struttura)

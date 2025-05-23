@@ -53,7 +53,7 @@ class ArticleResource extends XotBaseResource
                     ->required(),
                 Forms\Components\DateTimePicker::make('closed_at')
                     ->columnSpan(1)
-                    ->helperText('Determina fino a quando è possibile scommettere')
+                    ->helperText('Determina fino a quando è possibile visualizzare l\'articolo')
                     ->required(),
                 /*
                 Forms\Components\TextInput::make('description')
@@ -66,9 +66,9 @@ class ArticleResource extends XotBaseResource
                     ->nullable()
                 // ->required()
                 ,
-                Forms\Components\DateTimePicker::make('rewarded_at')
-                    ->nullable()
-                    ->columnSpan(1),
+                // Forms\Components\DateTimePicker::make('rewarded_at')
+                //     ->nullable()
+                //     ->columnSpan(1),
 
                 /*
                 Forms\Components\Select::make('category_id')
