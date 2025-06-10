@@ -1,3 +1,3 @@
 <div>
-  {{ $_theme->showPageContent('articles') }}
+  <x-page side="content" slug="articles" />
 </div>

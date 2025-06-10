@@ -6,15 +6,13 @@ namespace Modules\Blog\Filament\Resources\ArticleResource\Pages;
 
 use Filament\Actions;
 use Filament\Forms\Components\Checkbox;
-use Filament\Resources\Pages\EditRecord;
 use Modules\Blog\Actions\Article\TranslateContentAction;
 use Modules\Blog\Filament\Resources\ArticleResource;
 use Modules\Blog\Models\Article;
+use Modules\Lang\Filament\Resources\Pages\LangBaseEditRecord;
 
-class EditArticle extends EditRecord
+class EditArticle extends LangBaseEditRecord
 {
-    use EditRecord\Concerns\Translatable;
-
     protected static string $resource = ArticleResource::class;
 
     protected function getHeaderActions(): array

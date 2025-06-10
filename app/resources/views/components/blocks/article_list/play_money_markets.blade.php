@@ -42,10 +42,10 @@
 		</h2>
 		<section class="space-y-4">
 			<div class="flex flex-wrap justify-between gap-2 gap-4 lg:items-center">
-				{{-- @include('blog::components.blocks.article_list.play_money_markets.filter_list') --}}
-				@include('blog::components.blocks.article_list.play_money_markets.order_select')
+				{{-- @include('predict::components.blocks.article_list.play_money_markets.filter_list') --}}
+				@include('predict::components.blocks.article_list.play_money_markets.order_select')
 			</div>
-			@include('blog::components.blocks.article_list.play_money_markets.list_of_markets')
+			@include('predict::components.blocks.article_list.play_money_markets.list_of_markets')
 			
 			@if(request()->route()->getName() != 'home')
 				<div>

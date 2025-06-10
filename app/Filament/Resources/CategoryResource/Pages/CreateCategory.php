@@ -5,13 +5,11 @@ declare(strict_types=1);
 namespace Modules\Blog\Filament\Resources\CategoryResource\Pages;
 
 use Filament\Actions;
-use Filament\Resources\Pages\CreateRecord;
 use Modules\Blog\Filament\Resources\CategoryResource;
+use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
 
-class CreateCategory extends CreateRecord
+class CreateCategory extends LangBaseCreateRecord
 {
-    use CreateRecord\Concerns\Translatable;
-
     protected static string $resource = CategoryResource::class;
 
     protected function getHeaderActions(): array

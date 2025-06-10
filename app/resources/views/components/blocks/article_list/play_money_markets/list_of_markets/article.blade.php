@@ -32,7 +32,7 @@
                     {{ $article->title }}
                 </a>
                 <!-- categories -->
-                @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.categories')
+                @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.categories')
             </div>
 
             @livewire(\Modules\Predict\Http\Livewire\Widgets\RatingsWithImageWidget::class, [
@@ -58,9 +58,9 @@
                 </div>
             @endif
 
-            @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.article.footer_info')
+            @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.article.footer_info')
 
-            {{-- @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.article.ratings') --}}
+            {{-- @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.article.ratings') --}}
             @if(Auth::check())
                 <livewire:article.ratings-done :article_uuid="$article->uuid" :article_data="$article->toArray()" wire:key="$article->uuid"/>
 

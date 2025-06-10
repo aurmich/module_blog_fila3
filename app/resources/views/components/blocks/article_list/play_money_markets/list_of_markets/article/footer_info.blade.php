@@ -19,9 +19,9 @@
                 class="absolute z-10 inline-block w-[262px] bottom-11 shadow-[0_2px_8px_0_#00000026] bg-white text-sm text-[#6b6a6a] rounded-lg">
                 <div class="p-4 flex flex-col gap-2.5">
                     <!-- forecasters -->
-                    @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.forecasters')
+                    @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.forecasters')
                     <!-- volume -->
-                    @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.volume')
+                    @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.volume')
                 </div>
                 <div
                     class="absolute size-3 bg-inherit rotate-45 bottom-0 translate-y-1/2 left-12 border-b border-r border-[#00000026]">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <!-- bet end -->
-        @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.bet_end')
+        @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.bet_end')
     </div>
-    @include('blog::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.view_real_money')
+    @include('predict::components.blocks.article_list.play_money_markets.list_of_markets.footer_info.view_real_money')
 </div>
