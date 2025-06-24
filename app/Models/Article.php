@@ -627,8 +627,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         // return $query->where('status', 'published');
         // return $query->currentStatus('published');
         return $query
-            ->whereNotNull('published_at')
-            ->whereDate('published_at', '<=', Carbon::now());
+            ->whereNotNull('published_at');
     }
 
     /**
