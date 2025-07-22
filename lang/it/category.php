@@ -22,6 +22,9 @@ return array (
     'icon' => 
     array (
       'label' => 'icon',
+      'description' => 'icon',
+      'helper_text' => 'icon',
+      'placeholder' => 'icon',
     ),
     'image' => 
     array (

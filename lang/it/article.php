@@ -156,4 +156,6 @@ return array (
   array (
     'label' => 'article.model',
   ),
+  'time_left' => 'Tempo rimasto: :hours ore, :minutes minuti',
+  'time_left_days' => 'Tempo rimasto: :days giorni',
 );

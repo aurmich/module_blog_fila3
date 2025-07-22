@@ -32,7 +32,7 @@ return [
     'your_amount' => 'Prediction',
     'if_win' => 'If you win',
     'sell' => 'Sell',
-
+    'time_left' => 'Time left: :days days, :hours hours, :minutes minutes',
     // 'fields' => [
     //     'name' => 'Nome',
     //     'guard_name' => 'Guard',

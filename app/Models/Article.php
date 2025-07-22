@@ -526,9 +526,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         $startDate = Carbon::now();
 
         if ($startDate > $endDate) {
-            return 'expired';
-            // return __('blog::article.single_expired');
-            // return 'scaduto';
+            return __('blog::article.single_expired');
         }
 
         // Calcola la differenza tra le due date
@@ -544,14 +542,18 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         $days = $diff->d;
         $hours = $diff->h;
         $minutes = $diff->i;
+        
+
 
         if (0 === $month && 0 === $days && 0 === $hours && 0 === $minutes) {
-            // return __('blog::article.single_expired');
-            return 'scaduto';
-            // return 'expired';
+            return __('blog::article.single_expired');
         }
 
-        return "Tempo rimasto: $days giorni, $hours ore, $minutes minuti";
+        if($days > 0) {
+            return __('blog::article.time_left_days', ['days' => $days]);
+        }
+        
+        return __('blog::article.time_left', ['hours' => $hours, 'minutes' => $minutes]);
     }
 
     // /**
