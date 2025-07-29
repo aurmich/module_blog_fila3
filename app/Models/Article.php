@@ -553,17 +553,10 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
             return __('blog::article.single_expired');
         }
 
-<<<<<<< HEAD
         if($days > 0) {
             return __('blog::article.time_left_days', ['days' => $days]);
         }
         
-=======
-        if ($days > 0) {
-            return __('blog::article.time_left_days', ['days' => $days]);
-        }
-
->>>>>>> 3378794 (.)
         return __('blog::article.time_left', ['hours' => $hours, 'minutes' => $minutes]);
     }
 

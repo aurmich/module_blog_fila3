@@ -43,27 +43,11 @@
         }
     ],
     "require": {
-        "staudenmeir/laravel-adjacency-list": "^1.22",
-        "spatie/laravel-feed": "^4.4",
+        "staudenmeir/laravel-adjacency-list": "*",
+        "spatie/laravel-feed": "*",
         "staudenmeir/eloquent-has-many-deep": "*",
         "filament/spatie-laravel-tags-plugin": "*",
-        "codewithdennis/filament-select-tree": "^3.1"
-    },
-    "require_comment": {
-        "pboivin/filament-peek": "^2.0",
-        "thecodingmachine/safe": "^2.5"
-    },
-    "require-dev_comment": {
-        "laravel/pint": "^1.13",
-        "nunomaduro/phpinsights": "^2.11",
-        "larastan/larastan": "^2.7",
-        "vimeo/psalm": "^5.17",
-        "psalm/plugin-laravel": "^2.8",
-        "enlightn/enlightn": "^2.7",
-        "driftingly/rector-laravel": "^0.26.2",
-        "symplify/phpstan-rules": "*",
-        "rector/rector": "*",
-        "thecodingmachine/phpstan-safe-rule": "^1.2"
+        "codewithdennis/filament-select-tree": "*"
     },
     "config": {
         "allow-plugins": {
