@@ -20,6 +20,7 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Parental\HasChildren;
 use Safe\DateTime;
+use Spatie\Comments\Models\Concerns\HasComments;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 use Spatie\Tags\HasTags;
@@ -177,6 +178,7 @@ use Webmozart\Assert\Assert;
  */
 class Article extends BaseModel implements Feedable, HasRatingContract, HasTranslationsContract
 {
+    use HasComments;
     use HasRating;
     use HasTags;
     use HasTranslations;
@@ -216,7 +218,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
             $value = $translations[config('app.fallback_locale')] ?? '';
         }
 
-        return match(true) {
+        return match (true) {
             is_string($value) => $value,
             is_array($value) => $value,
             is_int($value) => $value,
@@ -355,7 +357,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
     // ----- Feed ------
     public function toFeedItem(): FeedItem
     {
-        Assert::notNull($this->user, '['.__LINE__.']['.__FILE__.']');
+        Assert::notNull($this->user, '[' . __LINE__ . '][' . __FILE__ . ']');
 
         return FeedItem::create()
             ->id($this->slug)
@@ -373,7 +375,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
 
     public function getFormattedDate(): string
     {
-        Assert::notNull($this->published_at, '['.__LINE__.']['.__FILE__.']');
+        Assert::notNull($this->published_at, '[' . __LINE__ . '][' . __FILE__ . ']');
 
         return $this->published_at->format('F jS Y');
     }
@@ -399,8 +401,8 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
                 $words = Str::wordCount(strip_tags((string) $attributes['body']));
                 $minutes = ceil($words / 200);
 
-                return $minutes.' '.str('min')->plural((int) $minutes).', '
-                    .$words.' '.str('word')->plural($words);
+                return $minutes . ' ' . str('min')->plural((int) $minutes) . ', '
+                    . $words . ' ' . str('word')->plural($words);
             }
         );
     }
@@ -462,7 +464,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
             return $this->title;
         }
 
-        return 'Get Title of article id '.$this->id;
+        return 'Get Title of article id ' . $this->id;
     }
 
     public function getMainImage(): string
@@ -536,7 +538,7 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         $month = $diff->m;
 
         if ($month > 0) {
-            return null;
+            return $endDate->format('Y-m-d');
         }
 
         $days = $diff->d;
@@ -545,14 +547,23 @@ class Article extends BaseModel implements Feedable, HasRatingContract, HasTrans
         
 
 
+
+
         if (0 === $month && 0 === $days && 0 === $hours && 0 === $minutes) {
             return __('blog::article.single_expired');
         }
 
+<<<<<<< HEAD
         if($days > 0) {
             return __('blog::article.time_left_days', ['days' => $days]);
         }
         
+=======
+        if ($days > 0) {
+            return __('blog::article.time_left_days', ['days' => $days]);
+        }
+
+>>>>>>> 3378794 (.)
         return __('blog::article.time_left', ['hours' => $hours, 'minutes' => $minutes]);
     }
 
