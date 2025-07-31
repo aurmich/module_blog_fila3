@@ -77,12 +77,17 @@ class ListArticles extends XotBaseListRecords
             ->defaultSort('published_at', 'desc');
     }
 
+    /**
+     * Get header actions.
+     *
+     * @return array<string, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            Actions\LocaleSwitcher::make(),
-            Actions\CreateAction::make(),
-            Actions\Action::make('import')
+            'locale_switcher' => Actions\LocaleSwitcher::make(),
+            'create' => Actions\CreateAction::make(),
+            'import' => Actions\Action::make('import')
                 ->form([
                     FileUpload::make('file')
                         ->label('')

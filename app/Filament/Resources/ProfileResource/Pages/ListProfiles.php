@@ -20,11 +20,16 @@ class ListProfiles extends UserListProfiles
     //    ];
     // }
 
+    /**
+     * Get table columns.
+     *
+     * @return array<string, \Filament\Tables\Columns\Column>
+     */
     public function getTableColumns(): array
     {
         $res = parent::getTableColumns();
 
-        $res[] = TextColumn::make('credits');
+        $res['credits'] = TextColumn::make('credits');
 
         return $res;
     }

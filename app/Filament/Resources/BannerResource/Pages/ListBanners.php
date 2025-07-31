@@ -22,11 +22,12 @@ class ListBanners extends XotBaseListRecords
 {
     // protected static string $resource = BannerResource::class;
 
+    
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
-            Actions\Action::make('import')
+            'create' => Actions\CreateAction::make(),
+            'import' => Actions\Action::make('import')
                 ->form([
                     FileUpload::make('file')
                         ->label('')

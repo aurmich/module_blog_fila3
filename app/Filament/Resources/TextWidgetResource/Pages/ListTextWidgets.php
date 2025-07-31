@@ -10,13 +10,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListTextWidgets extends XotBaseListRecords
 {
-    /**
-     * Restituisce le colonne della tabella per il listing dei TextWidget
-     * @return array<int, \Filament\Tables\Columns\Column>
-     */
-    /**
-     * @return array<string, mixed>
-     */
+    
     public function getTableColumns(): array
     {
         return [
@@ -29,10 +23,5 @@ class ListTextWidgets extends XotBaseListRecords
     }
     // protected static string $resource = TextWidgetResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
+   
 }

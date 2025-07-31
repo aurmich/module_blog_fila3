@@ -37,10 +37,7 @@ return array (
       'label' => 'footer_blocks',
       'description' => 'footer_blocks',
       'helper_text' => 'footer_blocks',
-<<<<<<< HEAD
       'placeholder' => 'footer_blocks',
-=======
->>>>>>> d58ad41 (.)
     ),
   ),
 );

@@ -1,10 +1,43 @@
-# Correzioni PHPStan Livello 3 - Modulo Blog
+# Correzioni PHPStan - Modulo Blog
 
-Questo documento traccia gli errori PHPStan di livello 3 identificati nel modulo Blog e le relative soluzioni implementate.
+Questo documento traccia gli errori PHPStan identificati nel modulo Blog e le relative soluzioni implementate.
 
-## Errori Identificati
+## Errori Risolti - Gennaio 2025
 
-### 1. Gestione dei Valori Null
+### 1. Return Type Compatibility - ListArticles
+
+**Problema**: Il metodo `getHeaderActions()` in `ListArticles.php` restituiva `array<int, Action>` invece di `array<string, Action>`.
+
+**Errore PHPStan**:
+
+```text
+Return type (array<string, Filament\Actions\Action>) of method should be compatible with return type (array<int, Filament\Actions\Action>)
+```
+
+**Soluzione Implementata**:
+
+1. Modificato il tipo di ritorno da `array<int>` a `array<string>` nella documentazione PHPDoc
+2. Convertito l'array numerico in array associativo con chiavi stringa
+3. Rispettato il pattern Laraxot per i metodi Filament
+
+```php
+/**
+ * @return array<string, \Filament\Actions\Action>
+ */
+protected function getHeaderActions(): array
+{
+    return [
+        'locale_switcher' => Actions\LocaleSwitcher::make(),
+        'create' => Actions\CreateAction::make(),
+        'import' => Actions\Action::make('import')
+            // ... resto della configurazione
+    ];
+}
+```
+
+**Regola Fondamentale**: Tutti i metodi Filament devono restituire array associativi con chiavi stringa, mai array numerici.
+
+### 2. Gestione dei Valori Null (Precedenti)
 
 **Problema**: Gestione non corretta dei valori nullable e mancanza di controlli espliciti.
 

@@ -49,11 +49,14 @@ class ListCategories extends XotBaseListRecords
     //         ]);
     // }
 
+    /**
+     
+     */
     protected function getHeaderActions(): array
     {
         return [
-            Actions\LocaleSwitcher::make(),
-            Actions\CreateAction::make(),
+            'locale_switcher' => Actions\LocaleSwitcher::make(),
+            'create' => Actions\CreateAction::make(),
         ];
     }
 }
