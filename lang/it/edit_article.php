@@ -15,6 +15,10 @@ return array (
     array (
       'label' => 'translate',
     ),
+    'cancel' => 
+    array (
+      'label' => 'cancel',
+    ),
   ),
   'fields' => 
   array (
