@@ -5,11 +5,7 @@
             <img class="absolute object-cover w-full h-full text-gray-400" src="{{ $_profile?->getAvatarUrl() ?? 'https://placehold.co/200x200' }}" alt="">
         </div>
 		<div class="space-y-2 text-center grow sm:text-left">
-<<<<<<< HEAD
-			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
-=======
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
->>>>>>> 23a0ba3 (.)
             {{-- <div class="flex space-x-4">
                 <div>0 <small class="text-sm text-gray-500">Followers</small></div>
                 <div>0 <small class="text-sm text-gray-500">Following</small></div>
@@ -38,45 +34,6 @@
         </div>
 	</div>
 
-<<<<<<< HEAD
-    <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <div class="flex items-center p-4 space-x-4 border rounded-xl">
-            <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
-            <div>
-                <div class="text-gray-500">Market traded</div>
-                <h2 class="text-4xl font-bold">
-                    {{ $_profile->ratingMorphs->count() }}
-                </h2>
-            </div>
-        </div>
-        <div class="flex items-center p-4 space-x-4 border rounded-xl">
-            <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
-            <div>
-                <div class="text-gray-500">Total outcome</div>
-                <h2 class="text-4xl font-bold">
-                    {{ $_profile->ratingMorphs->sum('value') }} <span class="text-3xl font-medium text-gray-400">ø</span>
-                </h2>
-            </div>
-        </div>
-        <div class="flex items-center p-4 space-x-4 border rounded-xl">
-            <x-heroicon-o-receipt-percent class="text-blue-500 size-8"/>
-            <div>
-                <div class="text-gray-500">Win Rate</div>
-                @if($_profile->ratingMorphs->count() > 0)
-                    <h2 class="text-4xl font-bold">
-                        {{ number_format($_profile->ratingMorphs->where('is_winner')->count() / $_profile->ratingMorphs->count() * 100, 2) }}%
-                    </h2>
-                @else
-                    <h2 class="text-4xl font-bold">
-                        0%
-                    </h2>
-                @endif
-            </div>
-        </div>
-    </div>
-
-=======
->>>>>>> 23a0ba3 (.)
 
     @php
         $_profile_transanctions = $_profile->transanctions;
