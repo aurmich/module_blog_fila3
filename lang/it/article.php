@@ -136,10 +136,13 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+=======
+>>>>>>> 7323f69 (.)
   ),
   'actions' => 
   array (

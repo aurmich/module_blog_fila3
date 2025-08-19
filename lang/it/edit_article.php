@@ -15,10 +15,13 @@ return array (
     array (
       'label' => 'translate',
     ),
+<<<<<<< HEAD
     'cancel' => 
     array (
       'label' => 'cancel',
     ),
+=======
+>>>>>>> 7323f69 (.)
   ),
   'fields' => 
   array (

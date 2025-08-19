@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Blog
 
 ## Obiettivi Funzionali
@@ -111,3 +112,36 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Comment](/laravel/Modules/Comment/docs/README.md)
 - [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
 - [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
+=======
+# 📝 Blog Module - Content Management
+
+## 📋 Quick Reference
+| Categoria | Guida | File |
+|-----------|-------| ---- |
+| **Content** | Blocks System | [blocks.md](blocks.md) |
+| **Features** | Comments | [comment.md](comment.md) |
+| **UI** | Visual Editor | [visual_editor.md](visual_editor.md) |
+| **SEO** | Pages & SEO | [pages.md](pages.md) |
+| **Themes** | Styling | [themes.md](themes.md) |
+| **Tools** | Icon Picker | [iconpicker.md](iconpicker.md) |
+| **AI** | Integration | [ai.md](ai.md) |
+| **MCP** | Server Setup | [mcp_server_recommended.md](mcp_server_recommended.md) |
+| **Analysis** | PHPStan | [phpstan-fixes.md](phpstan-fixes.md) |
+
+## 🎯 Core Features
+- **Content Blocks**: Modular content building system
+- **Visual Editor**: WYSIWYG editing experience
+- **Comment System**: User interaction and engagement
+- **SEO Optimization**: Search engine friendly content
+- **Theme Support**: Flexible theming system
+- **Multi-language**: Full translation support
+
+## 📁 Documentation Structure
+- Core documentation files in root level
+- Links and resources in [links.md](links.md)
+- Study materials in [to_study.md](to_study.md)
+- Technical structure in [structure.md](structure.md)
+
+---
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> 7323f69 (.)

@@ -69,10 +69,14 @@ class ListArticles extends XotBaseListRecords
     public function table(Table $table): Table
     {
         return $table
+<<<<<<< HEAD
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
             ))
+=======
+            ->columns($this->layoutView->getTableColumns())
+>>>>>>> 7323f69 (.)
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
             ->filters($this->getTableFilters())

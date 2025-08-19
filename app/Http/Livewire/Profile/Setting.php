@@ -14,7 +14,11 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Support\Enums\MaxWidth;
 use Livewire\Component;
+<<<<<<< HEAD
 use Modules\Predict\Models\Profile;
+=======
+use Modules\Blog\Models\Profile;
+>>>>>>> 7323f69 (.)
 use Modules\Xot\Actions\GetViewAction;
 use Webmozart\Assert\Assert;
 
@@ -39,6 +43,10 @@ class Setting extends Component implements HasActions, HasForms
     public function mount(Profile $model, string $tpl = 'v1'): void
     {
         $this->model = $model;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7323f69 (.)
         $this->tpl = $tpl;
         // dddx($this->model->toArray());
 
@@ -56,7 +64,10 @@ class Setting extends Component implements HasActions, HasForms
 
         $view_params = [
             'view' => $view,
+<<<<<<< HEAD
             '_profile' => $this->model,
+=======
+>>>>>>> 7323f69 (.)
         ];
 
         return view($view, $view_params);
