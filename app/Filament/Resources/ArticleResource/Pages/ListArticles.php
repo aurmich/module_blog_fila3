@@ -70,13 +70,19 @@ class ListArticles extends XotBaseListRecords
     {
         return $table
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
             ))
+<<<<<<< HEAD
 =======
             ->columns($this->layoutView->getTableColumns())
 >>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->headerActions($this->getTableHeaderActions())
             ->filters($this->getTableFilters())

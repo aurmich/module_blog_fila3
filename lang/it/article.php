@@ -137,12 +137,18 @@ return array (
       'label' => 'applyFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
   ),
   'actions' => 
   array (

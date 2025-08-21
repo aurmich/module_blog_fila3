@@ -6,10 +6,14 @@
         </div>
 		<div class="space-y-2 text-center grow sm:text-left">
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
 =======
 			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
 >>>>>>> 7323f69 (.)
+=======
+			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
+>>>>>>> f0a0500 (.)
             {{-- <div class="flex space-x-4">
                 <div>0 <small class="text-sm text-gray-500">Followers</small></div>
                 <div>0 <small class="text-sm text-gray-500">Following</small></div>
@@ -39,7 +43,10 @@
 	</div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f0a0500 (.)
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <div class="flex items-center p-4 space-x-4 border rounded-xl">
             <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
@@ -76,7 +83,10 @@
         </div>
     </div>
 
+<<<<<<< HEAD
 >>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
 
     @php
         $_profile_transanctions = $_profile->transanctions;

@@ -16,12 +16,18 @@ return array (
       'label' => 'translate',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
     'cancel' => 
     array (
       'label' => 'cancel',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
   ),
   'fields' => 
   array (
