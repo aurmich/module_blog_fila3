@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
 # Modulo Blog
 
 ## Obiettivi Funzionali
@@ -116,6 +119,9 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
 - [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bd9fd6e (.)
 =======
 # 📝 Blog Module - Content Management
 
@@ -149,5 +155,8 @@ Il modulo segue la struttura modulare standard di Laravel:
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 >>>>>>> 7323f69 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)

@@ -16,6 +16,7 @@ use Filament\Support\Enums\MaxWidth;
 use Livewire\Component;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Predict\Models\Profile;
 =======
 use Modules\Blog\Models\Profile;
@@ -23,6 +24,9 @@ use Modules\Blog\Models\Profile;
 =======
 use Modules\Blog\Models\Profile;
 >>>>>>> f0a0500 (.)
+=======
+use Modules\Blog\Models\Profile;
+>>>>>>> bd9fd6e (.)
 use Modules\Xot\Actions\GetViewAction;
 use Webmozart\Assert\Assert;
 
@@ -74,11 +78,14 @@ class Setting extends Component implements HasActions, HasForms
             'view' => $view,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             '_profile' => $this->model,
 =======
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
         ];
 
         return view($view, $view_params);

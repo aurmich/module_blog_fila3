@@ -44,9 +44,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <div class="flex items-center p-4 space-x-4 border rounded-xl">
             <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
@@ -84,9 +87,12 @@
     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
 
     @php
         $_profile_transanctions = $_profile->transanctions;

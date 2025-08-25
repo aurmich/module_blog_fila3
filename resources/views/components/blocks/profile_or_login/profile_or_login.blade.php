@@ -13,18 +13,18 @@
                 </div> --}}
 
                 <img
-                    src="{{ $_profile->getAvatarUrl() }}"
+                    src="{{ $profile->getAvatarUrl() }}"
                     class="size-10 
 
                             {{-- lg:size-[7.5rem]  --}}
                             lg:size-20 
                         rounded-full shrink-0 object-cover"
-                    alt="{{ $_profile->full_name }}"
+                    alt="{{ $profile->full_name }}"
                     />
 
 
 
-                <p class="text-base font-semibold text-neutral-5">{{ $_profile->full_name }}</p>
+                <p class="text-base font-semibold text-neutral-5">{{ $profile->full_name }}</p>
             </div>
             <div class="space-y-6">
                 <div class="flex justify-between items-center">
