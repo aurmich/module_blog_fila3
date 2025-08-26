@@ -2,14 +2,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ef4edf4 (.)
 =======
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> bd9fd6e (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f0a0500 (.)
 >>>>>>> cf118d5 (.)
+=======
+>>>>>>> ef4edf4 (.)
 # Modulo Blog
 
 ## Obiettivi Funzionali
@@ -126,10 +132,15 @@ Il modulo segue la struttura modulare standard di Laravel:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bd9fd6e (.)
 =======
 >>>>>>> cf118d5 (.)
+=======
+=======
+>>>>>>> bd9fd6e (.)
+>>>>>>> ef4edf4 (.)
 =======
 # 📝 Blog Module - Content Management
 
@@ -165,11 +176,17 @@ Il modulo segue la struttura modulare standard di Laravel:
 >>>>>>> 7323f69 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ef4edf4 (.)
 =======
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> bd9fd6e (.)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f0a0500 (.)
 >>>>>>> cf118d5 (.)
+=======
+>>>>>>> ef4edf4 (.)

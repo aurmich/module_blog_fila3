@@ -5,7 +5,19 @@
             <img class="absolute object-cover w-full h-full text-gray-400" src="{{ $_profile?->getAvatarUrl() ?? 'https://placehold.co/200x200' }}" alt="">
         </div>
 		<div class="space-y-2 text-center grow sm:text-left">
+<<<<<<< HEAD
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
+=======
+			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
+>>>>>>> 7323f69 (.)
+=======
+			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
+>>>>>>> f0a0500 (.)
+>>>>>>> ef4edf4 (.)
             {{-- <div class="flex space-x-4">
                 <div>0 <small class="text-sm text-gray-500">Followers</small></div>
                 <div>0 <small class="text-sm text-gray-500">Following</small></div>
@@ -34,6 +46,17 @@
         </div>
 	</div>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+>>>>>>> ef4edf4 (.)
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <div class="flex items-center p-4 space-x-4 border rounded-xl">
             <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
@@ -70,6 +93,17 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+
+>>>>>>> ef4edf4 (.)
     @php
         $_profile_transanctions = $_profile->transanctions;
     @endphp

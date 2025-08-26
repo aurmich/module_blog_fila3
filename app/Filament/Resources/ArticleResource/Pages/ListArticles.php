@@ -66,7 +66,33 @@ class ListArticles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
    
+=======
+    public function table(Table $table): Table
+    {
+        return $table
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
+            ->columns($this->layoutView->getTableColumns(
+                $this->getTableColumns(),
+                $this->getGridTableColumns()
+            ))
+<<<<<<< HEAD
+=======
+            ->columns($this->layoutView->getTableColumns())
+>>>>>>> 7323f69 (.)
+=======
+>>>>>>> f0a0500 (.)
+            ->contentGrid($this->layoutView->getTableContentGrid())
+            ->headerActions($this->getTableHeaderActions())
+            ->filters($this->getTableFilters())
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->defaultSort('published_at', 'desc');
+    }
+>>>>>>> ef4edf4 (.)
 
     /**
      * Get header actions.
