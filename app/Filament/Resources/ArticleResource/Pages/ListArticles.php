@@ -66,6 +66,7 @@ class ListArticles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     public function table(Table $table): Table
     {
         return $table
@@ -89,6 +90,9 @@ class ListArticles extends XotBaseListRecords
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->defaultSort('published_at', 'desc');
     }
+=======
+   
+>>>>>>> 3000985 (.)
 
     /**
      * Get header actions.

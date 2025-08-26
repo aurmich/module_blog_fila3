@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
 =======
 			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
@@ -18,6 +19,9 @@
 =======
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
 >>>>>>> cf118d5 (.)
+=======
+			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
+>>>>>>> 3000985 (.)
             {{-- <div class="flex space-x-4">
                 <div>0 <small class="text-sm text-gray-500">Followers</small></div>
                 <div>0 <small class="text-sm text-gray-500">Following</small></div>
@@ -49,11 +53,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> bd9fd6e (.)
+=======
+>>>>>>> 3000985 (.)
     <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <div class="flex items-center p-4 space-x-4 border rounded-xl">
             <x-heroicon-o-arrows-up-down class="text-blue-500 size-8"/>
@@ -92,12 +99,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> bd9fd6e (.)
 
+=======
+>>>>>>> 3000985 (.)
     @php
         $_profile_transanctions = $_profile->transanctions;
     @endphp
@@ -150,7 +160,10 @@
         </div>
     </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3000985 (.)
     <x-filament-actions::modals />
 
 </section>

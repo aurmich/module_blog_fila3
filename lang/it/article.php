@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -174,6 +175,8 @@ return array (
   'time_left_days' => 'Tempo rimasto: :days giorni',
 );
 =======
+=======
+>>>>>>> 3000985 (.)
 declare(strict_types=1);
 
 return [
@@ -235,9 +238,15 @@ return [
         ],
         'published_at' => [
             'label' => 'Data di pubblicazione',
+<<<<<<< HEAD
             'tooltip' => 'Quando l\'articolo è stato pubblicato',
             'placeholder' => 'Seleziona la data di pubblicazione',
             'help' => 'La data di pubblicazione determina l\'ordine cronologico',
+=======
+            'tooltip' => 'Data in cui l\'articolo diventa visibile',
+            'placeholder' => 'Seleziona la data di pubblicazione',
+            'help' => 'L\'articolo diventerà visibile ai lettori a partire da questa data',
+>>>>>>> 3000985 (.)
         ],
         'author_id' => [
             'label' => 'Autore',
@@ -249,6 +258,7 @@ return [
             'label' => 'Categoria',
             'tooltip' => 'Categoria dell\'articolo',
             'placeholder' => 'Seleziona la categoria',
+<<<<<<< HEAD
             'help' => 'La categoria aiuta a organizzare gli articoli',
         ],
         'tags' => [
@@ -256,6 +266,15 @@ return [
             'tooltip' => 'Tag associati all\'articolo',
             'placeholder' => 'Seleziona i tag',
             'help' => 'I tag aiutano a categorizzare e trovare gli articoli',
+=======
+            'help' => 'La categoria aiuta a organizzare e classificare gli articoli',
+        ],
+        'tags' => [
+            'label' => 'Tag',
+            'tooltip' => 'Tag per categorizzare l\'articolo',
+            'placeholder' => 'Aggiungi tag separati da virgole',
+            'help' => 'I tag aiutano i lettori a trovare articoli correlati',
+>>>>>>> 3000985 (.)
         ],
         'meta_title' => [
             'label' => 'Meta Title',
@@ -269,6 +288,7 @@ return [
             'placeholder' => 'Inserisci la meta description',
             'help' => 'La meta description viene mostrata nei risultati di ricerca',
         ],
+<<<<<<< HEAD
         'created_at' => [
             'label' => 'Data di creazione',
             'tooltip' => 'Quando l\'articolo è stato creato',
@@ -276,12 +296,24 @@ return [
         'updated_at' => [
             'label' => 'Data di aggiornamento',
             'tooltip' => 'Quando l\'articolo è stato aggiornato l\'ultima volta',
+=======
+        'is_featured' => [
+            'label' => 'In evidenza',
+            'tooltip' => 'Articolo in evidenza',
+            'help' => 'Gli articoli in evidenza vengono mostrati in posizioni privilegiate',
+        ],
+        'allow_comments' => [
+            'label' => 'Consenti commenti',
+            'tooltip' => 'Abilita i commenti per questo articolo',
+            'help' => 'I commenti permettono ai lettori di interagire con l\'articolo',
+>>>>>>> 3000985 (.)
         ],
     ],
 
     'actions' => [
         'create' => [
             'label' => 'Nuovo articolo',
+<<<<<<< HEAD
             'icon' => 'heroicon-o-plus',
             'color' => 'primary',
             'tooltip' => 'Crea un nuovo articolo',
@@ -439,6 +471,53 @@ return [
     'validation' => [
         'title' => [
             'required' => 'Il titolo è obbligatorio',
+=======
+            'tooltip' => 'Crea un nuovo articolo',
+            'success' => 'Articolo creato con successo',
+            'error' => 'Errore durante la creazione dell\'articolo',
+        ],
+        'edit' => [
+            'label' => 'Modifica articolo',
+            'tooltip' => 'Modifica l\'articolo selezionato',
+            'success' => 'Articolo aggiornato con successo',
+            'error' => 'Errore durante l\'aggiornamento dell\'articolo',
+        ],
+        'delete' => [
+            'label' => 'Elimina articolo',
+            'tooltip' => 'Elimina l\'articolo selezionato',
+            'success' => 'Articolo eliminato con successo',
+            'error' => 'Errore durante l\'eliminazione dell\'articolo',
+            'confirmation' => 'Sei sicuro di voler eliminare questo articolo? Questa azione è irreversibile.',
+        ],
+        'publish' => [
+            'label' => 'Pubblica articolo',
+            'tooltip' => 'Pubblica l\'articolo immediatamente',
+            'success' => 'Articolo pubblicato con successo',
+            'error' => 'Errore durante la pubblicazione dell\'articolo',
+        ],
+        'unpublish' => [
+            'label' => 'Rimuovi dalla pubblicazione',
+            'tooltip' => 'Rimuovi l\'articolo dalla pubblicazione',
+            'success' => 'Articolo rimosso dalla pubblicazione',
+            'error' => 'Errore durante la rimozione dalla pubblicazione',
+        ],
+        'duplicate' => [
+            'label' => 'Duplica articolo',
+            'tooltip' => 'Crea una copia dell\'articolo',
+            'success' => 'Articolo duplicato con successo',
+            'error' => 'Errore durante la duplicazione dell\'articolo',
+        ],
+        'preview' => [
+            'label' => 'Anteprima',
+            'tooltip' => 'Visualizza l\'anteprima dell\'articolo',
+        ],
+    ],
+
+    'validation' => [
+        'title' => [
+            'required' => 'Il titolo è obbligatorio',
+            'min' => 'Il titolo deve contenere almeno :min caratteri',
+>>>>>>> 3000985 (.)
             'max' => 'Il titolo non può superare i :max caratteri',
             'unique' => 'Esiste già un articolo con questo titolo',
         ],
@@ -538,4 +617,7 @@ return [
         'seo' => 'I meta tag aiutano i motori di ricerca a comprendere e indicizzare il contenuto dell\'articolo',
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> cf118d5 (.)
+=======
+>>>>>>> 3000985 (.)

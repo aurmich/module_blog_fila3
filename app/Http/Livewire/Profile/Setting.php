@@ -17,6 +17,7 @@ use Livewire\Component;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Predict\Models\Profile;
 =======
 use Modules\Blog\Models\Profile;
@@ -27,6 +28,9 @@ use Modules\Blog\Models\Profile;
 =======
 use Modules\Blog\Models\Profile;
 >>>>>>> bd9fd6e (.)
+=======
+use Modules\Blog\Models\Profile;
+>>>>>>> 3000985 (.)
 use Modules\Xot\Actions\GetViewAction;
 use Webmozart\Assert\Assert;
 
@@ -54,6 +58,7 @@ class Setting extends Component implements HasActions, HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 7323f69 (.)
@@ -62,6 +67,9 @@ class Setting extends Component implements HasActions, HasForms
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> cf118d5 (.)
+=======
+
+>>>>>>> 3000985 (.)
         $this->tpl = $tpl;
         // dddx($this->model->toArray());
 
@@ -82,6 +90,7 @@ class Setting extends Component implements HasActions, HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             '_profile' => $this->model,
 =======
 >>>>>>> 7323f69 (.)
@@ -89,6 +98,9 @@ class Setting extends Component implements HasActions, HasForms
 >>>>>>> f0a0500 (.)
 =======
 >>>>>>> bd9fd6e (.)
+=======
+            '_profile' => $this->model,
+>>>>>>> 3000985 (.)
         ];
 
         return view($view, $view_params);

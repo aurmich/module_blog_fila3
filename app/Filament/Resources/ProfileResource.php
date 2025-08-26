@@ -16,6 +16,7 @@ class ProfileResource extends BaseProfileResource
 
     protected static ?string $model = Profile::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,12 +31,19 @@ class ProfileResource extends BaseProfileResource
      * @return array<int, class-string>
      */
 >>>>>>> cf118d5 (.)
+=======
+
+    /**
+     * @return array<int, class-string>
+     */
+>>>>>>> 3000985 (.)
     public static function getRelations(): array
     {
         return [
             RelationManagers\RatingMorphsRelationManager::class,
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -51,6 +59,12 @@ class ProfileResource extends BaseProfileResource
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
 >>>>>>> cf118d5 (.)
+=======
+
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+     */
+>>>>>>> 3000985 (.)
     public static function getPages(): array
     {
         return [
