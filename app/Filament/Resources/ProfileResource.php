@@ -16,19 +16,9 @@ class ProfileResource extends BaseProfileResource
 
     protected static ?string $model = Profile::class;
 
-<<<<<<< HEAD
     /**
      * @return array<int, class-string>
      */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /** @return array<string, string> */
-=======
->>>>>>> 7323f69 (.)
-=======
->>>>>>> f0a0500 (.)
->>>>>>> ef4edf4 (.)
     public static function getRelations(): array
     {
         return [
@@ -36,19 +26,9 @@ class ProfileResource extends BaseProfileResource
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /** @return array<string, \Filament\Resources\Pages\PageRegistration> */
-=======
->>>>>>> 7323f69 (.)
-=======
->>>>>>> f0a0500 (.)
->>>>>>> ef4edf4 (.)
     public static function getPages(): array
     {
         return [

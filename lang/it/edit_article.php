@@ -15,25 +15,10 @@ return array (
     array (
       'label' => 'translate',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f0a0500 (.)
->>>>>>> ef4edf4 (.)
     'cancel' => 
     array (
       'label' => 'cancel',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 7323f69 (.)
-=======
->>>>>>> f0a0500 (.)
->>>>>>> ef4edf4 (.)
   ),
   'fields' => 
   array (
