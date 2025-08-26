@@ -17,20 +17,41 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> cf118d5 (.)
     'cancel' => 
     array (
       'label' => 'cancel',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> cf118d5 (.)
   ),
   'fields' => 
   array (
+    'title' => [
+        'label' => 'Titolo',
+        'placeholder' => 'Inserisci il titolo dell\'articolo',
+        'help' => 'Il titolo deve essere descrittivo e accattivante',
+    ],
+    'content' => [
+        'label' => 'Contenuto',
+        'placeholder' => 'Scrivi il contenuto dell\'articolo',
+        'help' => 'Utilizza l\'editor rich text per formattare il contenuto',
+    ],
+    'status' => [
+        'label' => 'Stato',
+        'placeholder' => 'Seleziona lo stato dell\'articolo',
+        'help' => 'Lo stato determina la visibilità dell\'articolo',
+    ],
     'content_blocks' => 
     array (
       'label' => 'content_blocks',

@@ -7,6 +7,7 @@
 		<div class="space-y-2 text-center grow sm:text-left">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
 =======
 			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
@@ -14,6 +15,9 @@
 =======
 			<h2 class="text-2xl">{{ $_profile->user->name }}</h2>
 >>>>>>> f0a0500 (.)
+=======
+			<h2 class="text-2xl">{{ $_profile->user?->name }}</h2>
+>>>>>>> cf118d5 (.)
             {{-- <div class="flex space-x-4">
                 <div>0 <small class="text-sm text-gray-500">Followers</small></div>
                 <div>0 <small class="text-sm text-gray-500">Following</small></div>

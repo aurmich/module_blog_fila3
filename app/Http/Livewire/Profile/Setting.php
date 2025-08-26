@@ -53,12 +53,15 @@ class Setting extends Component implements HasActions, HasForms
         $this->model = $model;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 7323f69 (.)
 =======
 
 >>>>>>> f0a0500 (.)
+=======
+>>>>>>> cf118d5 (.)
         $this->tpl = $tpl;
         // dddx($this->model->toArray());
 

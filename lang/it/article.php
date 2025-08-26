@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -172,3 +173,369 @@ return array (
   'time_left' => 'Tempo rimasto: :hours ore, :minutes minuti',
   'time_left_days' => 'Tempo rimasto: :days giorni',
 );
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'label' => 'Articoli',
+        'plural_label' => 'Articoli',
+        'navigation_group' => 'Blog',
+        'navigation_icon' => 'heroicon-o-document-text',
+        'navigation_sort' => 1,
+        'description' => 'Gestione completa degli articoli del blog',
+    ],
+
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => 'Identificativo univoco dell\'articolo',
+        ],
+        'title' => [
+            'label' => 'Titolo',
+            'tooltip' => 'Titolo dell\'articolo',
+            'placeholder' => 'Inserisci il titolo dell\'articolo',
+            'help' => 'Il titolo deve essere descrittivo e accattivante',
+        ],
+        'slug' => [
+            'label' => 'Slug',
+            'tooltip' => 'URL-friendly identifier',
+            'placeholder' => 'titolo-articolo',
+            'help' => 'Lo slug viene generato automaticamente dal titolo',
+        ],
+        'content' => [
+            'label' => 'Contenuto',
+            'tooltip' => 'Contenuto principale dell\'articolo',
+            'placeholder' => 'Scrivi il contenuto dell\'articolo...',
+            'help' => 'Utilizza l\'editor rich text per formattare il contenuto',
+        ],
+        'excerpt' => [
+            'label' => 'Estratto',
+            'tooltip' => 'Breve descrizione dell\'articolo',
+            'placeholder' => 'Scrivi un breve riassunto...',
+            'help' => 'L\'estratto viene mostrato nelle anteprime e nei meta tag',
+        ],
+        'featured_image' => [
+            'label' => 'Immagine in evidenza',
+            'tooltip' => 'Immagine principale dell\'articolo',
+            'placeholder' => 'Seleziona un\'immagine',
+            'help' => 'L\'immagine in evidenza viene mostrata nelle anteprime',
+        ],
+        'status' => [
+            'label' => 'Stato',
+            'tooltip' => 'Stato di pubblicazione dell\'articolo',
+            'placeholder' => 'Seleziona lo stato',
+            'help' => 'Gli articoli possono essere bozza, in revisione o pubblicati',
+            'options' => [
+                'draft' => 'Bozza',
+                'review' => 'In revisione',
+                'published' => 'Pubblicato',
+                'archived' => 'Archiviato',
+            ],
+        ],
+        'published_at' => [
+            'label' => 'Data di pubblicazione',
+            'tooltip' => 'Quando l\'articolo è stato pubblicato',
+            'placeholder' => 'Seleziona la data di pubblicazione',
+            'help' => 'La data di pubblicazione determina l\'ordine cronologico',
+        ],
+        'author_id' => [
+            'label' => 'Autore',
+            'tooltip' => 'Autore dell\'articolo',
+            'placeholder' => 'Seleziona l\'autore',
+            'help' => 'L\'autore è responsabile del contenuto dell\'articolo',
+        ],
+        'category_id' => [
+            'label' => 'Categoria',
+            'tooltip' => 'Categoria dell\'articolo',
+            'placeholder' => 'Seleziona la categoria',
+            'help' => 'La categoria aiuta a organizzare gli articoli',
+        ],
+        'tags' => [
+            'label' => 'Tag',
+            'tooltip' => 'Tag associati all\'articolo',
+            'placeholder' => 'Seleziona i tag',
+            'help' => 'I tag aiutano a categorizzare e trovare gli articoli',
+        ],
+        'meta_title' => [
+            'label' => 'Meta Title',
+            'tooltip' => 'Titolo per i motori di ricerca',
+            'placeholder' => 'Inserisci il meta title',
+            'help' => 'Il meta title viene mostrato nei risultati di ricerca',
+        ],
+        'meta_description' => [
+            'label' => 'Meta Description',
+            'tooltip' => 'Descrizione per i motori di ricerca',
+            'placeholder' => 'Inserisci la meta description',
+            'help' => 'La meta description viene mostrata nei risultati di ricerca',
+        ],
+        'created_at' => [
+            'label' => 'Data di creazione',
+            'tooltip' => 'Quando l\'articolo è stato creato',
+        ],
+        'updated_at' => [
+            'label' => 'Data di aggiornamento',
+            'tooltip' => 'Quando l\'articolo è stato aggiornato l\'ultima volta',
+        ],
+    ],
+
+    'actions' => [
+        'create' => [
+            'label' => 'Nuovo articolo',
+            'icon' => 'heroicon-o-plus',
+            'color' => 'primary',
+            'tooltip' => 'Crea un nuovo articolo',
+            'modal' => [
+                'heading' => 'Crea nuovo articolo',
+                'description' => 'Inserisci i dati per creare un nuovo articolo',
+                'confirm' => 'Crea articolo',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo creato con successo',
+                'error' => 'Si è verificato un errore durante la creazione',
+            ],
+        ],
+        'edit' => [
+            'label' => 'Modifica articolo',
+            'icon' => 'heroicon-o-pencil',
+            'color' => 'warning',
+            'tooltip' => 'Modifica l\'articolo selezionato',
+            'modal' => [
+                'heading' => 'Modifica articolo',
+                'description' => 'Modifica i dati dell\'articolo selezionato',
+                'confirm' => 'Salva modifiche',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo modificato con successo',
+                'error' => 'Si è verificato un errore durante la modifica',
+            ],
+        ],
+        'delete' => [
+            'label' => 'Elimina articolo',
+            'icon' => 'heroicon-o-trash',
+            'color' => 'danger',
+            'tooltip' => 'Elimina l\'articolo selezionato',
+            'modal' => [
+                'heading' => 'Elimina articolo',
+                'description' => 'Sei sicuro di voler eliminare questo articolo? Questa azione è irreversibile.',
+                'confirm' => 'Elimina articolo',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo eliminato con successo',
+                'error' => 'Si è verificato un errore durante l\'eliminazione',
+            ],
+        ],
+        'publish' => [
+            'label' => 'Pubblica articolo',
+            'icon' => 'heroicon-o-check-circle',
+            'color' => 'success',
+            'tooltip' => 'Pubblica l\'articolo',
+            'modal' => [
+                'heading' => 'Pubblica articolo',
+                'description' => 'Sei sicuro di voler pubblicare questo articolo?',
+                'confirm' => 'Pubblica articolo',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo pubblicato con successo',
+                'error' => 'Si è verificato un errore durante la pubblicazione',
+            ],
+        ],
+        'unpublish' => [
+            'label' => 'Rimuovi dalla pubblicazione',
+            'icon' => 'heroicon-o-x-circle',
+            'color' => 'secondary',
+            'tooltip' => 'Rimuovi l\'articolo dalla pubblicazione',
+            'modal' => [
+                'heading' => 'Rimuovi dalla pubblicazione',
+                'description' => 'Sei sicuro di voler rimuovere questo articolo dalla pubblicazione?',
+                'confirm' => 'Rimuovi dalla pubblicazione',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo rimosso dalla pubblicazione con successo',
+                'error' => 'Si è verificato un errore durante la rimozione dalla pubblicazione',
+            ],
+        ],
+        'duplicate' => [
+            'label' => 'Duplica articolo',
+            'icon' => 'heroicon-o-document-duplicate',
+            'color' => 'info',
+            'tooltip' => 'Crea una copia dell\'articolo',
+            'modal' => [
+                'heading' => 'Duplica articolo',
+                'description' => 'Sei sicuro di voler duplicare questo articolo?',
+                'confirm' => 'Duplica articolo',
+                'cancel' => 'Annulla',
+            ],
+            'messages' => [
+                'success' => 'Articolo duplicato con successo',
+                'error' => 'Si è verificato un errore durante la duplicazione',
+            ],
+        ],
+        'bulk_actions' => [
+            'publish' => [
+                'label' => 'Pubblica selezionati',
+                'modal_heading' => 'Pubblica articoli selezionati',
+                'modal_description' => 'Sei sicuro di voler pubblicare gli articoli selezionati?',
+                'success' => 'Articoli pubblicati con successo',
+                'error' => 'Si è verificato un errore durante la pubblicazione',
+            ],
+            'unpublish' => [
+                'label' => 'Rimuovi dalla pubblicazione selezionati',
+                'modal_heading' => 'Rimuovi dalla pubblicazione articoli selezionati',
+                'modal_description' => 'Sei sicuro di voler rimuovere dalla pubblicazione gli articoli selezionati?',
+                'success' => 'Articoli rimossi dalla pubblicazione con successo',
+                'error' => 'Si è verificato un errore durante la rimozione dalla pubblicazione',
+            ],
+            'delete' => [
+                'label' => 'Elimina selezionati',
+                'modal_heading' => 'Elimina articoli selezionati',
+                'modal_description' => 'Sei sicuro di voler eliminare gli articoli selezionati? Questa azione è irreversibile.',
+                'success' => 'Articoli eliminati con successo',
+                'error' => 'Si è verificato un errore durante l\'eliminazione',
+            ],
+        ],
+    ],
+
+    'sections' => [
+        'details' => [
+            'label' => 'Dettagli',
+            'tooltip' => 'Informazioni di base dell\'articolo',
+        ],
+        'content' => [
+            'label' => 'Contenuto',
+            'tooltip' => 'Contenuto principale dell\'articolo',
+        ],
+        'seo' => [
+            'label' => 'SEO',
+            'tooltip' => 'Ottimizzazione per i motori di ricerca',
+        ],
+        'publishing' => [
+            'label' => 'Pubblicazione',
+            'tooltip' => 'Impostazioni di pubblicazione',
+        ],
+        'categorization' => [
+            'label' => 'Categorizzazione',
+            'tooltip' => 'Categoria e tag dell\'articolo',
+        ],
+    ],
+
+    'messages' => [
+        'created' => 'Articolo creato con successo',
+        'updated' => 'Articolo aggiornato con successo',
+        'deleted' => 'Articolo eliminato con successo',
+        'published' => 'Articolo pubblicato con successo',
+        'unpublished' => 'Articolo rimosso dalla pubblicazione con successo',
+        'duplicated' => 'Articolo duplicato con successo',
+        'bulk_published' => 'Articoli pubblicati con successo',
+        'bulk_unpublished' => 'Articoli rimossi dalla pubblicazione con successo',
+        'bulk_deleted' => 'Articoli eliminati con successo',
+    ],
+
+    'validation' => [
+        'title' => [
+            'required' => 'Il titolo è obbligatorio',
+            'max' => 'Il titolo non può superare i :max caratteri',
+            'unique' => 'Esiste già un articolo con questo titolo',
+        ],
+        'slug' => [
+            'required' => 'Lo slug è obbligatorio',
+            'unique' => 'Esiste già un articolo con questo slug',
+            'regex' => 'Lo slug può contenere solo lettere minuscole, numeri e trattini',
+        ],
+        'content' => [
+            'required' => 'Il contenuto è obbligatorio',
+            'min' => 'Il contenuto deve contenere almeno :min caratteri',
+        ],
+        'excerpt' => [
+            'max' => 'L\'estratto non può superare i :max caratteri',
+        ],
+        'status' => [
+            'required' => 'Lo stato è obbligatorio',
+            'in' => 'Lo stato selezionato non è valido',
+        ],
+        'published_at' => [
+            'date' => 'La data di pubblicazione deve essere una data valida',
+            'after_or_equal' => 'La data di pubblicazione deve essere successiva o uguale a oggi',
+        ],
+        'author_id' => [
+            'required' => 'L\'autore è obbligatorio',
+            'exists' => 'L\'autore selezionato non esiste',
+        ],
+        'category_id' => [
+            'required' => 'La categoria è obbligatoria',
+            'exists' => 'La categoria selezionata non esiste',
+        ],
+        'meta_title' => [
+            'max' => 'Il meta title non può superare i :max caratteri',
+        ],
+        'meta_description' => [
+            'max' => 'La meta description non può superare i :max caratteri',
+        ],
+    ],
+
+    'filters' => [
+        'status' => [
+            'label' => 'Stato',
+            'placeholder' => 'Filtra per stato',
+        ],
+        'author' => [
+            'label' => 'Autore',
+            'placeholder' => 'Filtra per autore',
+        ],
+        'category' => [
+            'label' => 'Categoria',
+            'placeholder' => 'Filtra per categoria',
+        ],
+        'published_at' => [
+            'label' => 'Data di pubblicazione',
+            'placeholder' => 'Filtra per data di pubblicazione',
+        ],
+        'search' => [
+            'label' => 'Cerca',
+            'placeholder' => 'Cerca negli articoli...',
+        ],
+    ],
+
+    'stats' => [
+        'total' => [
+            'label' => 'Totale articoli',
+            'description' => 'Numero totale di articoli',
+        ],
+        'published' => [
+            'label' => 'Articoli pubblicati',
+            'description' => 'Numero di articoli pubblicati',
+        ],
+        'draft' => [
+            'label' => 'Bozze',
+            'description' => 'Numero di articoli in bozza',
+        ],
+        'recent' => [
+            'label' => 'Articoli recenti',
+            'description' => 'Articoli pubblicati negli ultimi 7 giorni',
+        ],
+    ],
+
+    'empty_states' => [
+        'no_articles' => 'Nessun articolo trovato',
+        'no_published_articles' => 'Nessun articolo pubblicato',
+        'no_draft_articles' => 'Nessuna bozza trovata',
+        'create_first' => 'Crea il tuo primo articolo per iniziare',
+    ],
+
+    'help' => [
+        'title' => 'Il titolo dell\'articolo deve essere descrittivo e accattivante per attirare i lettori',
+        'slug' => 'Lo slug viene utilizzato nell\'URL dell\'articolo. Viene generato automaticamente dal titolo ma può essere personalizzato',
+        'content' => 'Utilizza l\'editor rich text per formattare il contenuto dell\'articolo. Puoi aggiungere immagini, link e formattazione',
+        'excerpt' => 'L\'estratto viene mostrato nelle anteprime degli articoli e nei meta tag per i motori di ricerca',
+        'featured_image' => 'L\'immagine in evidenza viene mostrata nelle anteprime degli articoli e nelle condivisioni social',
+        'status' => 'Gli articoli possono essere salvati come bozza, inviati in revisione o pubblicati immediatamente',
+        'published_at' => 'La data di pubblicazione determina quando l\'articolo diventa visibile ai lettori',
+        'seo' => 'I meta tag aiutano i motori di ricerca a comprendere e indicizzare il contenuto dell\'articolo',
+    ],
+];
+>>>>>>> cf118d5 (.)

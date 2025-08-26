@@ -15,6 +15,7 @@ class ProfileResource extends BaseProfileResource
     use Translatable;
 
     protected static ?string $model = Profile::class;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,12 +24,19 @@ class ProfileResource extends BaseProfileResource
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
+=======
+    
+    /**
+     * @return array<int, class-string>
+     */
+>>>>>>> cf118d5 (.)
     public static function getRelations(): array
     {
         return [
             RelationManagers\RatingMorphsRelationManager::class,
         ];
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,6 +45,12 @@ class ProfileResource extends BaseProfileResource
 >>>>>>> 7323f69 (.)
 =======
 >>>>>>> f0a0500 (.)
+=======
+    
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+     */
+>>>>>>> cf118d5 (.)
     public static function getPages(): array
     {
         return [
