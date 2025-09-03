@@ -52,3 +52,9 @@ cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
+
+# Backup files
+*.old
+*.old1
+*.backup
+*.backup.*
