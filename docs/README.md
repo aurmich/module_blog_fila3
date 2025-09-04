@@ -126,11 +126,15 @@ Il modulo segue la struttura modulare standard di Laravel:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bd9fd6e (.)
 =======
 >>>>>>> cf118d5 (.)
 =======
+=======
+
+>>>>>>> 5c04027 (.)
 # 📝 Blog Module - Content Management
 
 ## 📋 Quick Reference
@@ -162,6 +166,7 @@ Il modulo segue la struttura modulare standard di Laravel:
 
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+<<<<<<< HEAD
 >>>>>>> 7323f69 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,3 +178,5 @@ Il modulo segue la struttura modulare standard di Laravel:
 =======
 >>>>>>> f0a0500 (.)
 >>>>>>> cf118d5 (.)
+=======
+>>>>>>> 5c04027 (.)
