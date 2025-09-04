@@ -1,2 +1,2 @@
-https://pinegrow.com/docs/tailwind/tailwind-blocks/
+https://pinegrow.com/project_docs/tailwind/tailwind-blocks/
 

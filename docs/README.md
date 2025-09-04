@@ -1,45 +1,25 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f0a0500 (.)
-=======
->>>>>>> bd9fd6e (.)
-=======
-=======
->>>>>>> f0a0500 (.)
->>>>>>> cf118d5 (.)
-# Modulo Blog
+# 📝 Blog Module - Content Management
 
-## Obiettivi Funzionali
-- Gestione di articoli e commenti
-- Supporto per categorie e tag
-- Integrazione con Filament per l'amministrazione
+## 📋 Quick Reference
+| Categoria | Guida | File |
+|-----------|-------| ---- |
+| **Content** | Blocks System | [blocks.md](blocks.md) |
+| **Features** | Comments | [comment.md](comment.md) |
+| **UI** | Visual Editor | [visual_editor.md](visual_editor.md) |
+| **SEO** | Pages & SEO | [pages.md](pages.md) |
+| **Themes** | Styling | [themes.md](themes.md) |
+| **Tools** | Icon Picker | [iconpicker.md](iconpicker.md) |
+| **AI** | Integration | [ai.md](ai.md) |
+| **MCP** | Server Setup | [mcp_server_recommended.md](mcp_server_recommended.md) |
+| **Analysis** | PHPStan | [phpstan-fixes.md](phpstan-fixes.md) |
 
-## Decisioni Architetturali
-- Utilizzo di XotBaseResource per le risorse Filament
-- Implementazione di traduzioni tramite file di lingua
-- Gestione delle relazioni tra articoli e commenti
-
-## Collegamenti
-- [Documentazione Principale](../../docs/README.md)
-- [Regole Globali](../../docs/REGOLE_GLOBALI.md)
-- [Convenzioni di Denominazione](../../docs/NAMING_CONVENTIONS.md)
-
-## Backlink
-- [Modulo User](../User/docs/README.md)
-- [Modulo Cms](../Cms/docs/README.md)
-- [Modulo Xot](../Xot/docs/README.md)
-- [Modulo Predict](../Predict/docs/README.md)
-
-## Indice
-- [Descrizione](#descrizione)
-- [Struttura](#struttura)
-- [Funzionalità](#funzionalità)
-- [Conflitti Risolti](#conflitti-risolti)
-- [Best Practices](#best-practices)
-- [Collegamenti Bidirezionali](#collegamenti-bidirezionali)
+## 🎯 Core Features
+- **Content Blocks**: Modular content building system
+- **Visual Editor**: WYSIWYG editing experience
+- **Comment System**: User interaction and engagement
+- **SEO Optimization**: Search engine friendly content
+- **Theme Support**: Flexible theming system
+- **Multi-language**: Full translation support
 
 ## Descrizione
 Il modulo Blog gestisce blog, articoli, categorie e contenuti editoriali all'interno dell'applicazione. Fornisce un sistema completo per la creazione, gestione e visualizzazione di contenuti editoriali strutturati.
@@ -89,7 +69,7 @@ Il modulo segue la struttura modulare standard di Laravel:
 
 **Problema:** Conflitti nelle factory per i modelli Banner e Category, con differenze nella definizione dei campi e dei valori predefiniti.
 
-**Soluzione:** Questi conflitti devono essere analizzati e risolti manualmente, considerando la struttura attuale dei modelli e le relazioni tra di essi.
+**Soluzione:** Questi conflitti devono essere analizzati e risolti manualmente, considerando la struttura attuale dei modelli e le relazioni entre di essi.
 
 **Motivazione:** Le factory sono essenziali per i test e il seeding del database, quindi è importante che riflettano correttamente la struttura e le relazioni dei modelli.
 
@@ -116,67 +96,30 @@ Il modulo segue la struttura modulare standard di Laravel:
 - Utilizzare le factory per generare dati di test
 - Testare le interazioni tra i modelli
 
-## Collegamenti Bidirezionali
-- [Documentazione Principale](/laravel/docs/README.md)
-- [Modulo UI](/laravel/Modules/UI/docs/README.md)
-- [Modulo Cms](/laravel/Modules/Cms/docs/README.md)
-- [Modulo Comment](/laravel/Modules/Comment/docs/README.md)
-- [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
-- [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bd9fd6e (.)
-=======
->>>>>>> cf118d5 (.)
-=======
-=======
-
->>>>>>> 5c04027 (.)
-# 📝 Blog Module - Content Management
-
-## 📋 Quick Reference
-| Categoria | Guida | File |
-|-----------|-------| ---- |
-| **Content** | Blocks System | [blocks.md](blocks.md) |
-| **Features** | Comments | [comment.md](comment.md) |
-| **UI** | Visual Editor | [visual_editor.md](visual_editor.md) |
-| **SEO** | Pages & SEO | [pages.md](pages.md) |
-| **Themes** | Styling | [themes.md](themes.md) |
-| **Tools** | Icon Picker | [iconpicker.md](iconpicker.md) |
-| **AI** | Integration | [ai.md](ai.md) |
-| **MCP** | Server Setup | [mcp_server_recommended.md](mcp_server_recommended.md) |
-| **Analysis** | PHPStan | [phpstan-fixes.md](phpstan-fixes.md) |
-
-## 🎯 Core Features
-- **Content Blocks**: Modular content building system
-- **Visual Editor**: WYSIWYG editing experience
-- **Comment System**: User interaction and engagement
-- **SEO Optimization**: Search engine friendly content
-- **Theme Support**: Flexible theming system
-- **Multi-language**: Full translation support
-
 ## 📁 Documentation Structure
 - Core documentation files in root level
 - Links and resources in [links.md](links.md)
 - Study materials in [to_study.md](to_study.md)
 - Technical structure in [structure.md](structure.md)
 
+## Collegamenti
+- [Documentazione Principale](../../project_docs/README.md)
+- [Regole Globali](../../project_docs/REGOLE_GLOBALI.md)
+- [Convenzioni di Denominazione](../../project_docs/NAMING_CONVENTIONS.md)
+
+## Backlink
+- [Modulo User](../User/project_docs/README.md)
+- [Modulo Cms](../Cms/project_docs/README.md)
+- [Modulo Xot](../Xot/project_docs/README.md)
+- [Modulo Predict](../Predict/project_docs/README.md)
+
+## Collegamenti Bidirezionali
+- [Documentazione Principale](/laravel/project_docs/README.md)
+- [Modulo UI](/laravel/Modules/UI/project_docs/README.md)
+- [Modulo Cms](/laravel/Modules/Cms/project_docs/README.md)
+- [Modulo Comment](/laravel/Modules/Comment/project_docs/README.md)
+- [Modulo Lang](/laravel/Modules/Lang/project_docs/README.md)
+- [Modulo Xot](/laravel/Modules/Xot/project_docs/README.md)
+
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
-<<<<<<< HEAD
->>>>>>> 7323f69 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f0a0500 (.)
-=======
->>>>>>> bd9fd6e (.)
-=======
-=======
->>>>>>> f0a0500 (.)
->>>>>>> cf118d5 (.)
-=======
->>>>>>> 5c04027 (.)

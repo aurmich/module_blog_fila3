@@ -59,8 +59,8 @@ protected string $apiRoutePrefix = 'api/blog';
 ```
 
 ## Collegamenti
-- [Documentazione Modulo Blog](/docs/modules/module_blog.md)
-- [Configurazione Rotte](/docs/routing.md)
-- [Middleware](/docs/middleware.md)
+- [Documentazione Modulo Blog](/project_docs/modules/module_blog.md)
+- [Configurazione Rotte](/project_docs/routing.md)
+- [Middleware](/project_docs/middleware.md)
 
-[Torna alla documentazione principale](/docs/README.md) 
+[Torna alla documentazione principale](/project_docs/README.md) 

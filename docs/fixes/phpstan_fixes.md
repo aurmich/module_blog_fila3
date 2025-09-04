@@ -8,6 +8,6 @@ Il file `app/Filament/Resources/ArticleResource/Pages/ListArticles.php` contenev
 Il blocco di codice commentato è stato rimosso per risolvere l'errore di sintassi. Il codice commentato era obsoleto e non più necessario.
 
 ### Collegamenti Bidirezionali
-- [Documentazione Generale PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
-- [Best Practices Filament](/docs/filament/FILAMENT_BEST_PRACTICES.md)
-- [Struttura del Modulo Blog](/docs/modules/blog.md) 
+- [Documentazione Generale PHPStan](/project_docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
+- [Best Practices Filament](/project_docs/filament/FILAMENT_BEST_PRACTICES.md)
+- [Struttura del Modulo Blog](/project_docs/modules/blog.md) 

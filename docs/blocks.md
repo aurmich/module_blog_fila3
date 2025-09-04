@@ -8,7 +8,7 @@ https://flowrift.com/c/blog/cYo4a?view=code
 
 https://wickedblocks.dev/groups/content/
 
-https://tw-elements.com/docs/standard/designblocks/landing-page/
+https://tw-elements.com/project_docs/standard/designblocks/landing-page/
 
 https://pagedone.io/blocks
 
