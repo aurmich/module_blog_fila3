@@ -19,7 +19,7 @@ class Chunk extends Component
     {
         $articles = Article::whereIn('id', $this->postIds)->get()->keyBy('id');
 
-        $orderedPosts = collect($this->postIds)->map(static fn ($id) => $articles[$id]);
+        $orderedPosts = collect($this->postIds)->map(static fn ($id) => (is_array($articles) ? $articles[$id] : null));
 
         /**
          * @phpstan-var view-string
@@ -30,7 +30,7 @@ class Chunk extends Component
             'articles' => $orderedPosts,
         ];
 
-        return view($view, $view_params);
+        return view((string) $view, (string) $view_params);
     }
 
     public function url(string $name, array $params): string

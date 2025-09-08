@@ -30,7 +30,7 @@
 						{{ $title }}
 					@elseif(isset($category))
 						{{-- Articoli della categoria --}}
-						{{ __('blog::category.show.title') }} "{{ $category->title }}"
+						{{ (string) __('blog::category.show.title') }} "{{ $category->title }}"
 						{{-- <span class="mt-1 text-sm font-normal text-gray-500">{{ $articles->total() }}</span> --}}
 					@else
 						Articoli
@@ -54,7 +54,7 @@
 			@else
 				<div class="flex justify-center">
 					<a href="{{ route('articles.index', ['lang' => $lang]) }}" class="flex items-center px-4 py-2 space-x-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600">
-						<span>{{ __('blog::page.load-more') }}</span>
+						<span>{{ (string) __('blog::page.load-more') }}</span>
 						<x-heroicon-o-arrow-right class="size-4"/>
 					</a>
 				</div>

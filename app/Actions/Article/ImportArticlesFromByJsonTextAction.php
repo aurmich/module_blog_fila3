@@ -8,11 +8,10 @@ use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Modules\Blog\Models\Article;
 use Modules\Blog\Models\Category;
-
-use function Safe\json_decode;
-
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_decode;
 
 class ImportArticlesFromByJsonTextAction
 {
@@ -20,9 +19,14 @@ class ImportArticlesFromByJsonTextAction
 
     public function execute(string $json_text): void
     {
-        Assert::isArray($json = json_decode($json_text, true), '['.__LINE__.']['.__FILE__.']');
+        /** @var array $json */
+        $json = json_decode($json_text, true);
+        Assert::isArray($json, '['.__LINE__.']['.__FILE__.']');
 
+        /** @var array $j */
         foreach ($json as $j) {
+            Assert::isArray($j, 'Each element must be an array');
+
             $bet_end_date = $j['bet_end_date'] ?? '';
             if (\is_string($bet_end_date) && mb_strlen($bet_end_date) > 3) {
                 $bet_end_date = Carbon::parse($bet_end_date);
@@ -37,15 +41,22 @@ class ImportArticlesFromByJsonTextAction
             }
 
             $parent_category_id = null;
-            foreach ($j['category'] as $cat) {
+            /** @var array $categories */
+            $categories = $j['category'] ?? [];
+            Assert::isArray($categories, 'Category must be an array');
+
+            /** @var array $cat */
+            foreach ($categories as $cat) {
                 // dddx($category);
-                $cd = $cat ?? [];
+                Assert::isArray($cat, 'Category item must be an array');
+                $cd = $cat;
                 $category_data = [
                     'title' => $cd['title'] ?? '',
                     'slug' => $cd['slug'] ?? '',
                     'parent_id' => $parent_category_id,
                 ];
                 $category_where = ['slug' => $category_data['slug']];
+                /** @var Category $category */
                 $category = Category::firstOrCreate($category_where, $category_data);
                 $parent_category_id = $category->id;
                 // dddx($parent_category_id);
@@ -60,7 +71,7 @@ class ImportArticlesFromByJsonTextAction
                 'title' => $j['title'],
                 'slug' => $j['slug'],
                 'status' => $j['status'],
-                'status_display' => 'open' === $j['status_display'],
+                'status_display' => $j['status_display'] === 'open',
                 'bet_end_date' => $bet_end_date,
                 'event_start_date' => $event_start_date,
                 'event_end_date' => $event_end_date,
@@ -83,18 +94,23 @@ class ImportArticlesFromByJsonTextAction
 
             $article = Article::firstOrCreate($article_where, $article_data);
 
-            foreach ($j['outcomes'] as $rating) {
+            /** @var array $outcomes */
+            $outcomes = $j['outcomes'];
+            /** @var array $rating */
+            foreach ($outcomes as $rating) {
                 $rating_where = [
-                    'title' => $rating['title'],
+                    'title' => $rating['title'] ?? '',
                 ];
                 $rating_data = [
-                    'title' => $rating['title'],
-                    'is_disabled' => $rating['disabled'],
+                    'title' => $rating['title'] ?? '',
+                    'is_disabled' => $rating['disabled'] ?? false,
                 ];
 
-                $article->ratings()->firstOrCreate($rating_where, $rating_data)
-                    ->addMediaFromUrl($rating['thumbnail_2x'])
-                    ->toMediaCollection('rating');
+                $ratingModel = $article->ratings()->firstOrCreate($rating_where, $rating_data);
+                if (isset($rating['thumbnail_2x']) && is_string($rating['thumbnail_2x'])) {
+                    $ratingModel->addMediaFromUrl($rating['thumbnail_2x'])
+                        ->toMediaCollection('rating');
+                }
             }
 
             // dddx($j['outcomes']);

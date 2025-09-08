@@ -22,20 +22,20 @@ class ImportBannerFromByJsonTextAction
         Assert::isArray($json = json_decode($json_text, true), '['.__LINE__.']['.__FILE__.']');
 
         foreach ($json as $j) {
-            $start_date = $j['start_date'] ?? '';
+            $start_date = (is_array($j) ? $j['start_date'] : null) ?? '';
             if (\is_string($start_date) && mb_strlen($start_date) > 3) {
                 $start_date = Carbon::parse($start_date);
             }
-            $end_date = $j['end_date'];
+            $end_date = (is_array($j) ? $j['end_date'] : null);
             if (\is_string($end_date) && mb_strlen($end_date) > 3) {
                 $end_date = Carbon::parse($end_date);
             }
 
-            $cd = $j['category_dict'] ?? [];
+            $cd = (is_array($j) ? $j['category_dict'] : null) ?? [];
 
             $category_data = [
-                'title' => $cd['title'] ?? '',
-                'slug' => $cd['slug'] ?? '',
+                'title' => (is_array($cd) ? $cd['title'] : null) ?? '',
+                'slug' => (is_array($cd) ? $cd['slug'] : null) ?? '',
                 // "in_leaderboard"=> $cd['in_leaderboard'],
                 // "icon"=>$cd['icon'],
             ];
@@ -43,24 +43,24 @@ class ImportBannerFromByJsonTextAction
             $category = Category::firstOrCreate($category_where, $category_data);
 
             $banner_where = [
-                'title' => $j['title'],
-                'action_text' => $j['action_text'],
+                'title' => (is_array($j) ? $j['title'] : null),
+                'action_text' => (is_array($j) ? $j['action_text'] : null),
             ];
             $banner_data = [
-                'title' => $j['title'],
-                'description' => $j['short_description'],
-                'action_text' => $j['action_text'],
-                'link' => $j['link'],
+                'title' => (is_array($j) ? $j['title'] : null),
+                'description' => (is_array($j) ? $j['short_description'] : null),
+                'action_text' => (is_array($j) ? $j['action_text'] : null),
+                'link' => (is_array($j) ? $j['link'] : null),
                 'start_date' => $start_date,
                 'end_date' => $end_date,
-                'hot_topic' => $j['hot_topic'],
-                'open_markets_count' => $j['open_markets_count'],
-                'landing_banner' => $j['landing_banner'],
+                'hot_topic' => (is_array($j) ? $j['hot_topic'] : null),
+                'open_markets_count' => (is_array($j) ? $j['open_markets_count'] : null),
+                'landing_banner' => (is_array($j) ? $j['landing_banner'] : null),
                 'category_id' => $category->id,
             ];
 
             Banner::firstOrCreate($banner_where, $banner_data)
-                ->addMediaFromUrl($j['desktop_thumbnail'])
+                ->addMediaFromUrl((is_array((string) $j) ? $j['desktop_thumbnail'] : null))
                 ->toMediaCollection('banner');
 
             // $banner->addMediaFromUrl($j['desktop_thumbnail']);

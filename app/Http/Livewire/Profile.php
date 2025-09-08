@@ -80,7 +80,7 @@ class Profile extends Page implements HasForms
             'view' => $view,
         ];
 
-        return view($view, $view_params);
+        return view((string) $view, (string) $view_params);
     }
 
     public function url(string $name, array $params): string
@@ -136,7 +136,7 @@ class Profile extends Page implements HasForms
     {
         return [
             Action::make('save')
-                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
+                ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label') ?: '')
                 ->submit('save'),
         ];
     }

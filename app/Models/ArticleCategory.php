@@ -7,13 +7,13 @@ namespace Modules\Blog\Models;
 /**
  * Modules\Blog\Models\ArticleCategory.
  *
- * @property string                          $id
- * @property int                             $category_id
- * @property int                             $article_id
+ * @property string $id
+ * @property int $category_id
+ * @property int $article_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null                     $updated_by
- * @property string|null                     $created_by
+ * @property string|null $updated_by
+ * @property string|null $created_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|ArticleCategory newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ArticleCategory newQuery()
@@ -30,13 +30,21 @@ namespace Modules\Blog\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|ArticleCategory withoutTrashed()
  *
  * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property string|null                     $deleted_by
+ * @property string|null $deleted_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|ArticleCategory whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ArticleCategory whereDeletedBy($value)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+ * @method static ArticleCategory|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, ArticleCategory> get()
+ * @method static ArticleCategory create(array $attributes = [])
+ * @method static ArticleCategory firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ArticleCategory where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ArticleCategory whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
  *
  * @mixin \Eloquent
  */

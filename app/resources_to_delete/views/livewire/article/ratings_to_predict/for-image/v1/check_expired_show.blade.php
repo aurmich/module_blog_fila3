@@ -4,7 +4,7 @@
     </div>
     <div class="p-4">
         <div class="p-2 border border-red-400 rounded-lg bg-red-400/20">
-            <span>{{ __('blog::article.expired') }}</span>
+            <span>{{ (string) __('blog::article.expired') }}</span>
         </div>
     </div>
 </div>

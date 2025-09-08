@@ -7,13 +7,13 @@ namespace Modules\Blog\Models;
 /**
  * Modules\Blog\Models\CategoryPost.
  *
- * @property string                          $id
- * @property int                             $category_id
- * @property int                             $post_id
+ * @property string $id
+ * @property int $category_id
+ * @property int $post_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null                     $updated_by
- * @property string|null                     $created_by
+ * @property string|null $updated_by
+ * @property string|null $created_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|CategoryPost newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|CategoryPost newQuery()
@@ -30,13 +30,21 @@ namespace Modules\Blog\Models;
  * @method static \Illuminate\Database\Eloquent\Builder|CategoryPost withoutTrashed()
  *
  * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property string|null                     $deleted_by
+ * @property string|null $deleted_by
  *
  * @method static \Illuminate\Database\Eloquent\Builder|CategoryPost whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|CategoryPost whereDeletedBy($value)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+ * @method static CategoryPost|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, CategoryPost> get()
+ * @method static CategoryPost create(array $attributes = [])
+ * @method static CategoryPost firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|CategoryPost where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|CategoryPost whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
  *
  * @mixin \Eloquent
  */

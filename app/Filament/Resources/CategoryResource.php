@@ -38,7 +38,7 @@ class CategoryResource extends XotBaseResource
                 ->reactive()
                 ->unique()
                 ->afterStateUpdated(function (Forms\Set $set, $state): void {
-                    $set('slug', Str::slug($state));
+                    $set('slug', Str::slug((string) $state));
                 }),
             Forms\Components\TextInput::make('slug')
                 ->required()
