@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 # 📝 Blog Module - Content Management
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+=======
+=======
+>>>>>>> f0a0500 (.)
+>>>>>>> cf118d5 (.)
+# Modulo Blog
+>>>>>>> b2517c1 (.)
 
 ## 📋 Quick Reference
 | Categoria | Guida | File |
@@ -96,6 +112,47 @@ Il modulo segue la struttura modulare standard di Laravel:
 - Utilizzare le factory per generare dati di test
 - Testare le interazioni tra i modelli
 
+<<<<<<< HEAD
+=======
+## Collegamenti Bidirezionali
+- [Documentazione Principale](/laravel/docs/README.md)
+- [Modulo UI](/laravel/Modules/UI/docs/README.md)
+- [Modulo Cms](/laravel/Modules/Cms/docs/README.md)
+- [Modulo Comment](/laravel/Modules/Comment/docs/README.md)
+- [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
+- [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bd9fd6e (.)
+=======
+>>>>>>> cf118d5 (.)
+=======
+# 📝 Blog Module - Content Management
+
+## 📋 Quick Reference
+| Categoria | Guida | File |
+|-----------|-------| ---- |
+| **Content** | Blocks System | [blocks.md](blocks.md) |
+| **Features** | Comments | [comment.md](comment.md) |
+| **UI** | Visual Editor | [visual_editor.md](visual_editor.md) |
+| **SEO** | Pages & SEO | [pages.md](pages.md) |
+| **Themes** | Styling | [themes.md](themes.md) |
+| **Tools** | Icon Picker | [iconpicker.md](iconpicker.md) |
+| **AI** | Integration | [ai.md](ai.md) |
+| **MCP** | Server Setup | [mcp_server_recommended.md](mcp_server_recommended.md) |
+| **Analysis** | PHPStan | [phpstan-fixes.md](phpstan-fixes.md) |
+
+## 🎯 Core Features
+- **Content Blocks**: Modular content building system
+- **Visual Editor**: WYSIWYG editing experience
+- **Comment System**: User interaction and engagement
+- **SEO Optimization**: Search engine friendly content
+- **Theme Support**: Flexible theming system
+- **Multi-language**: Full translation support
+
+>>>>>>> b2517c1 (.)
 ## 📁 Documentation Structure
 - Core documentation files in root level
 - Links and resources in [links.md](links.md)
@@ -122,4 +179,19 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Xot](/laravel/Modules/Xot/project_docs/README.md)
 
 ---
+<<<<<<< HEAD
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+=======
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> 7323f69 (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+=======
+=======
+>>>>>>> f0a0500 (.)
+>>>>>>> cf118d5 (.)
+>>>>>>> b2517c1 (.)
