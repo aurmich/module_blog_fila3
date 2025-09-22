@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Blog
 
 ## Obiettivi Funzionali
@@ -30,7 +31,24 @@
 - [Best Practices](#best-practices)
 - [Collegamenti Bidirezionali](#collegamenti-bidirezionali)
 =======
+=======
+>>>>>>> 1b8de63 (.)
 # 📝 Blog Module - Content Management
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+=======
+=======
+>>>>>>> f0a0500 (.)
+>>>>>>> cf118d5 (.)
+# Modulo Blog
+>>>>>>> b2517c1 (.)
 
 ## 📋 Quick Reference
 | Categoria | Guida | File |
@@ -134,6 +152,10 @@ Il modulo segue la struttura modulare standard di Laravel:
 - Testare le interazioni tra i modelli
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1b8de63 (.)
 ## Collegamenti Bidirezionali
 - [Documentazione Principale](/laravel/docs/README.md)
 - [Modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -141,7 +163,18 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Comment](/laravel/Modules/Comment/docs/README.md)
 - [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
 - [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bd9fd6e (.)
+=======
+>>>>>>> cf118d5 (.)
+=======
+>>>>>>> 1b8de63 (.)
 # 📝 Blog Module - Content Management
 
 ## 📋 Quick Reference
@@ -165,8 +198,12 @@ Il modulo segue la struttura modulare standard di Laravel:
 - **Theme Support**: Flexible theming system
 - **Multi-language**: Full translation support
 
+<<<<<<< HEAD
 =======
 >>>>>>> b1b8a66 (.)
+=======
+>>>>>>> b2517c1 (.)
+>>>>>>> 1b8de63 (.)
 ## 📁 Documentation Structure
 - Core documentation files in root level
 - Links and resources in [links.md](links.md)
@@ -197,5 +234,24 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Xot](/laravel/Modules/Xot/project_docs/README.md)
 
 ---
+<<<<<<< HEAD
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 >>>>>>> b1b8a66 (.)
+=======
+<<<<<<< HEAD
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+=======
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> 7323f69 (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f0a0500 (.)
+=======
+>>>>>>> bd9fd6e (.)
+=======
+=======
+>>>>>>> f0a0500 (.)
+>>>>>>> cf118d5 (.)
+>>>>>>> b2517c1 (.)
+>>>>>>> 1b8de63 (.)
