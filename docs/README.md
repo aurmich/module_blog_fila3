@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Blog
 
 ## Obiettivi Funzionali
@@ -33,22 +34,9 @@
 =======
 =======
 >>>>>>> 1b8de63 (.)
+=======
+>>>>>>> 21638d6 (.)
 # 📝 Blog Module - Content Management
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f0a0500 (.)
-=======
->>>>>>> bd9fd6e (.)
-=======
-=======
->>>>>>> f0a0500 (.)
->>>>>>> cf118d5 (.)
-# Modulo Blog
->>>>>>> b2517c1 (.)
 
 ## 📋 Quick Reference
 | Categoria | Guida | File |
@@ -153,9 +141,18 @@ Il modulo segue la struttura modulare standard di Laravel:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1b8de63 (.)
+=======
+## 📁 Documentation Structure
+- Core documentation files in root level
+- Links and resources in [links.md](links.md)
+- Study materials in [to_study.md](to_study.md)
+- Technical structure in [structure.md](structure.md)
+
+>>>>>>> 21638d6 (.)
 ## Collegamenti Bidirezionali
 - [Documentazione Principale](/laravel/docs/README.md)
 - [Modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -163,6 +160,7 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Comment](/laravel/Modules/Comment/docs/README.md)
 - [Modulo Lang](/laravel/Modules/Lang/docs/README.md)
 - [Modulo Xot](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -232,10 +230,12 @@ Il modulo segue la struttura modulare standard di Laravel:
 - [Modulo Comment](/laravel/Modules/Comment/project_docs/README.md)
 - [Modulo Lang](/laravel/Modules/Lang/project_docs/README.md)
 - [Modulo Xot](/laravel/Modules/Xot/project_docs/README.md)
+=======
+>>>>>>> 21638d6 (.)
 
 ---
-<<<<<<< HEAD
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+<<<<<<< HEAD
 >>>>>>> b1b8a66 (.)
 =======
 <<<<<<< HEAD
@@ -255,3 +255,5 @@ Il modulo segue la struttura modulare standard di Laravel:
 >>>>>>> cf118d5 (.)
 >>>>>>> b2517c1 (.)
 >>>>>>> 1b8de63 (.)
+=======
+>>>>>>> 21638d6 (.)
