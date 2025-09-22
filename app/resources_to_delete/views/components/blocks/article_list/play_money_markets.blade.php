@@ -30,7 +30,11 @@
 						{{ $title }}
 					@elseif(isset($category))
 						{{-- Articoli della categoria --}}
+<<<<<<< HEAD
 						{{ __('blog::category.show.title') }} "{{ $category->title }}"
+=======
+						{{ (string) __('blog::category.show.title') }} "{{ $category->title }}"
+>>>>>>> b1b8a66 (.)
 						{{-- <span class="mt-1 text-sm font-normal text-gray-500">{{ $articles->total() }}</span> --}}
 					@else
 						Articoli
@@ -54,7 +58,11 @@
 			@else
 				<div class="flex justify-center">
 					<a href="{{ route('articles.index', ['lang' => $lang]) }}" class="flex items-center px-4 py-2 space-x-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600">
+<<<<<<< HEAD
 						<span>{{ __('blog::page.load-more') }}</span>
+=======
+						<span>{{ (string) __('blog::page.load-more') }}</span>
+>>>>>>> b1b8a66 (.)
 						<x-heroicon-o-arrow-right class="size-4"/>
 					</a>
 				</div>

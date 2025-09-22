@@ -56,7 +56,11 @@
             class="bg-white rounded-2xl text-sm space-y-10 p-6"
             >
             <p class="text-base font-semibold">
+<<<<<<< HEAD
                 {{ __('predict::auth.sign-up-or-login-to-participate') }}
+=======
+                {{ (string) __('predict::auth.sign-up-or-login-to-participate') }}
+>>>>>>> b1b8a66 (.)
             </p>
             <div class="flex gap-4">
                 {{-- <a
@@ -68,7 +72,11 @@
                 </a> --}}
 
                 <x-filament::link :href="route('register')" class="border border-blue-1 font-semibold hover:border-blue-2 hover:bg-blue-2 hover:text-blue-3 text-blue-1 focus:ring-4 focus:outline-none focus:ring-blue rounded-lg text-sm px-10 h-12 hidden lg:flex items-center justify-center text-center">
+<<<<<<< HEAD
                     {{ __('user::auth.sign-up') }}
+=======
+                    {{ (string) __('user::auth.sign-up') }}
+>>>>>>> b1b8a66 (.)
                 </x-filament::link>
 
 
@@ -80,7 +88,11 @@
                 Login
                 </a> --}}
                 <x-filament::link :href="route('login')" class="bg-blue-1 text-white hover:bg-blue-2 hover:text-blue-3 focus:ring-4 focus:outline-none focus:ring-blue font-semibold rounded-lg text-sm px-10 h-12 flex items-center justify-center text-center">
+<<<<<<< HEAD
                     {{ __('user::auth.login-in') }}
+=======
+                    {{ (string) __('user::auth.login-in') }}
+>>>>>>> b1b8a66 (.)
                 </x-filament::link>
             </div>
         </div>

@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 /**
  * Modules\Blog\Models\Taggable.
  *
+<<<<<<< HEAD
  * @property int                             $id
  * @property int                             $tag_id
  * @property string                          $taggable_type
@@ -18,6 +19,17 @@ use Illuminate\Support\Arr;
  * @property string|null                     $updated_by
  * @property string|null                     $created_by
  * @property array                           $custom_properties
+=======
+ * @property int $id
+ * @property int $tag_id
+ * @property string $taggable_type
+ * @property int $taggable_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property array $custom_properties
+>>>>>>> b1b8a66 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Taggable newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Taggable newQuery()
@@ -35,7 +47,11 @@ use Illuminate\Support\Arr;
  * @method static \Illuminate\Database\Eloquent\Builder|Taggable withoutTrashed()
  *
  * @property \Illuminate\Support\Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property string|null                     $deleted_by
+=======
+ * @property string|null $deleted_by
+>>>>>>> b1b8a66 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Taggable whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Taggable whereDeletedBy($value)
@@ -43,6 +59,17 @@ use Illuminate\Support\Arr;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static Taggable|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, Taggable> get()
+ * @method static Taggable create(array $attributes = [])
+ * @method static Taggable firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Taggable where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Taggable whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
+>>>>>>> b1b8a66 (.)
  * @mixin \Eloquent
  */
 class Taggable extends BaseMorphPivot
@@ -90,7 +117,11 @@ class Taggable extends BaseMorphPivot
     /**
      * Get the value of custom property with the given name.
      *
+<<<<<<< HEAD
      * @param mixed|null $default
+=======
+     * @param  mixed|null  $default
+>>>>>>> b1b8a66 (.)
      */
     public function getCustomProperty(string $propertyName, $default = null): mixed
     {
@@ -98,8 +129,12 @@ class Taggable extends BaseMorphPivot
     }
 
     /**
+<<<<<<< HEAD
      * @param int|string|float|array|null $value
      *
+=======
+     * @param  int|string|float|array|null  $value
+>>>>>>> b1b8a66 (.)
      * @return $this
      */
     public function setCustomProperty(string $name, $value): self

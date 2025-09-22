@@ -14,6 +14,7 @@ use Spatie\Translatable\HasTranslations;
 /**
  * Modules\Cms\Models\Menu.
  *
+<<<<<<< HEAD
  * @property int                             $id
  * @property string                          $name
  * @property array|null                      $items
@@ -59,6 +60,53 @@ use Spatie\Translatable\HasTranslations;
  * @property string                                                                                                     $mobile_thumbnail_webp
  * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property int|null                                                                                                   $media_count
+=======
+ * @property int $id
+ * @property string $name
+ * @property array|null $items
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ *
+ * @method static \Modules\Blog\Database\Factories\MenuFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereItems($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Menu withoutTrashed()
+ *
+ * @property string|null $link
+ * @property string|null $title
+ * @property string|null $description
+ * @property string|null $action_text
+ * @property string|null $category_id
+ * @property \Illuminate\Support\Carbon|null $start_date
+ * @property \Illuminate\Support\Carbon|null $end_date
+ * @property bool $hot_topic
+ * @property int|null $open_markets_count
+ * @property bool $landing_banner
+ * @property int|null $pos
+ * @property Category|null $category
+ * @property string $desktop_thumbnail
+ * @property string $desktop_thumbnail_webp
+ * @property string $mobile_thumbnail
+ * @property string $mobile_thumbnail_webp
+ * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property int|null $media_count
+>>>>>>> b1b8a66 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Banner whereActionText($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Banner whereCategoryId($value)
@@ -76,6 +124,19 @@ use Spatie\Translatable\HasTranslations;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Illuminate\Database\Eloquent\Model
+<<<<<<< HEAD
+=======
+ *
+ * @method static Banner|null first()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, Banner> get()
+ * @method static Banner create(array $attributes = [])
+ * @method static Banner firstOrCreate(array $attributes = [], array $values = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Banner where(string|\Closure $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Banner whereNotNull(string|\Illuminate\Contracts\Database\Query\Expression $columns)
+ * @method static int count(string $columns = '*')
+ *
+ * @mixin \Eloquent
+>>>>>>> b1b8a66 (.)
  */
 class Banner extends BaseModel implements HasMedia
 {
@@ -84,6 +145,10 @@ class Banner extends BaseModel implements HasMedia
 
     /**
      * Attributi assegnabili in massa (mass assignment).
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> b1b8a66 (.)
      * @var list<string>
      */
     protected $fillable = [
@@ -173,7 +238,11 @@ class Banner extends BaseModel implements HasMedia
 
     public function getUrlCategoryPage(): string
     {
+<<<<<<< HEAD
         if (null === $this->category) {
+=======
+        if ($this->category === null) {
+>>>>>>> b1b8a66 (.)
             return route('categories.index', ['lang' => app()->getLocale()]);
         }
 

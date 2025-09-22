@@ -60,7 +60,11 @@ class Setting extends Component implements HasActions, HasForms
             '_profile' => $this->model,
         ];
 
+<<<<<<< HEAD
         return view($view, $view_params);
+=======
+        return view((string) $view, (string) $view_params);
+>>>>>>> b1b8a66 (.)
     }
 
     public function editProfile(): void

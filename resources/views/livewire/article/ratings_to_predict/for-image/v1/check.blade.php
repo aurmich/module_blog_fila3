@@ -1,13 +1,21 @@
 <div class="flex flex-col" {{-- x-show="isloggedIn" --}}>
     <div class="block w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div class="flex justify-between w-full px-3 py-3 font-bold text-white bg-blue-1 lg:rounded-t">
+<<<<<<< HEAD
             {{ __('predict::bet.place-bet') }}
+=======
+            {{ (string) __('predict::bet.place-bet') }}
+>>>>>>> b1b8a66 (.)
         </div>
         <form wire:submit="save">
             <div class="flex flex-col items-center justify-center w-11/12 gap-3 mx-auto my-4 border rounded-t">
                 <div class="w-full p-1 mx-auto rounded bg-neutral-1">
                     <div class="flex items-center justify-between px-2 py-4">
+<<<<<<< HEAD
                         <span class="text-sm">{{ __('predict::bet.your-bet') }}
+=======
+                        <span class="text-sm">{{ (string) __('predict::bet.your-bet') }}
+>>>>>>> b1b8a66 (.)
                             {{ $rating_title }}
                         </span>
                         @if($type == 'show')
@@ -82,7 +90,11 @@
                     class="flex items-center justify-center w-full px-5 py-3 my-2 mt-4 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 disabled:bg-opacity-15"
                     {{-- disabled --}}
                     >
+<<<<<<< HEAD
                 {{ __('predict::bet.select-an-outcome') }}
+=======
+                {{ (string) __('predict::bet.select-an-outcome') }}
+>>>>>>> b1b8a66 (.)
                 </button>
             </div>
         </form>

@@ -13,7 +13,11 @@
                             alt="{{ $category['title'] }}"/>
                     </div>
                     <div class="flex flex-col justify-between p-4 space-y-2">
+<<<<<<< HEAD
                         <span class="inline px-3 py-1 text-blue-600 rounded w-max bg-blue-200/20">{{ $category['ratings_sum'] }} {{ __('blog::article.navigation.plural') }}</span>
+=======
+                        <span class="inline px-3 py-1 text-blue-600 rounded w-max bg-blue-200/20">{{ $category['ratings_sum'] }} {{ (string) __('blog::article.navigation.plural') }}</span>
+>>>>>>> b1b8a66 (.)
                         <h3 class="font-semibold grow">{{ $category['title'] }}</h3>
                     </div>
                 </a>

@@ -14,7 +14,11 @@
                                 <circle cx="4" cy="4" r="4" fill="currentColor"></circle>
                             </svg>
                             @if($article->time_left_for_humans == 'expired')
+<<<<<<< HEAD
                                 {{ __('blog::article.single_expired') }}
+=======
+                                {{ (string) __('blog::article.single_expired') }}
+>>>>>>> b1b8a66 (.)
                             @else
                                 {{-- In 16 hours and 05 minutes --}}
                                 {{ $article->time_left_for_humans }}

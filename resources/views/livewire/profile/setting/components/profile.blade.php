@@ -74,23 +74,39 @@
         $_profile_transanctions = $_profile->transanctions;
     @endphp
     <div>
+<<<<<<< HEAD
         <h6 class="mb-2 text-xs text-gray-400">TRANSACTIONS <span class="text-blue-400">({{ $_profile_transanctions->count()}})</span></h6>
+=======
+        <h6 class="mb-2 text-xs text-gray-400">TRANSACTIONS <span class="text-blue-400">({{ $_profile_transanctions->count()/** @phpstan-ignore method.nonObject */}})</span></h6>
+>>>>>>> b1b8a66 (.)
         <div class="py-2 overflow-x-auto">
             <table class="w-full" cellpadding="12">
                 <thead>
                     <tr class="text-sm text-gray-400 bg-gray-50">
+<<<<<<< HEAD
                         <th class="text-start">{{ __('blog::profile.setting.date') }}</th>
                         <th>{{ __('blog::profile.setting.action') }}</th>
                         <th class="text-start">{{ __('blog::profile.setting.market') }}</th>
                         <th>{{ __('blog::profile.setting.outcome') }}</th>
                         <th>{{ __('blog::profile.setting.option') }}</th>
+=======
+                        <th class="text-start">{{ (string) __('blog::profile.setting.date') }}</th>
+                        <th>{{ (string) __('blog::profile.setting.action') }}</th>
+                        <th class="text-start">{{ (string) __('blog::profile.setting.market') }}</th>
+                        <th>{{ (string) __('blog::profile.setting.outcome') }}</th>
+                        <th>{{ (string) __('blog::profile.setting.option') }}</th>
+>>>>>>> b1b8a66 (.)
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($_profile->transanctions as $trans)
                         <tr>
                             <td>{{ $trans->created_at }}</td>
+<<<<<<< HEAD
                             <td class="text-center">{{ __('blog::profile.setting.'.$trans->note) ?? 'not defined' }}</td>
+=======
+                            <td class="text-center">{{ (string) __('blog::profile.setting.'.$trans->note) ?? 'not defined' }}</td>
+>>>>>>> b1b8a66 (.)
                             <td>
                                 @if($trans->model_type == 'profile')
                                     -
@@ -111,7 +127,11 @@
                                     @if($rating_morph->rating != null)
                                         {{ $rating_morph->rating->title }}
                                     @else
+<<<<<<< HEAD
                                         {{ __('predict::bet.not-defined') }}
+=======
+                                        {{ (string) __('predict::bet.not-defined') }}
+>>>>>>> b1b8a66 (.)
                                     @endif
                                 @endif
                             </td>

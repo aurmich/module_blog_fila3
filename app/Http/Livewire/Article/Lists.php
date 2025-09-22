@@ -69,7 +69,11 @@ class Lists extends Component
             'activeCategory' => $this->category,
         ];
 
+<<<<<<< HEAD
         return view($view, $view_params);
+=======
+        return view((string) $view, (string) $view_params);
+>>>>>>> b1b8a66 (.)
     }
 
     public function updatedCategory(): void
@@ -84,7 +88,11 @@ class Lists extends Component
 
     public function loadMore(): void
     {
+<<<<<<< HEAD
         ++$this->currentChunk;
+=======
+        $this->currentChunk++;
+>>>>>>> b1b8a66 (.)
     }
 
     // private function getActiveCategory(): ?Category
@@ -103,7 +111,11 @@ class Lists extends Component
             $query = $query->whereCategoryId($activeCategory->id);
         }
 
+<<<<<<< HEAD
         if ('date_asc' === $this->order) {
+=======
+        if ($this->order === 'date_asc') {
+>>>>>>> b1b8a66 (.)
             return $query->orderBy('published_at', 'asc');
         }
 
@@ -113,11 +125,19 @@ class Lists extends Component
     private function refreshArticles(): void
     {
         // This will force the update of the `post-chunk` child components
+<<<<<<< HEAD
         ++$this->queryCount;
         $this->currentChunk = 0;
 
         $postIds = $this->getArticleQuery()->pluck('id');
         $this->postCount = $postIds->count();
+=======
+        $this->queryCount++;
+        $this->currentChunk = 0;
+
+        $postIds = $this->getArticleQuery()->pluck('id');
+        $this->postCount = $postIds->count(); /** @phpstan-ignore method.nonObject */
+>>>>>>> b1b8a66 (.)
         $this->postChunks = $postIds->chunk(self::ITEMS_PER_PAGE);
     }
 }

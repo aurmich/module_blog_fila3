@@ -45,7 +45,11 @@ class ArticleResource extends XotBaseResource
                         if ($get('slug')) {
                             return;
                         }
+<<<<<<< HEAD
                         $set('slug', Str::slug($state));
+=======
+                        $set('slug', Str::slug((string) $state));
+>>>>>>> b1b8a66 (.)
                     }),
 
                 Forms\Components\TextInput::make('slug')

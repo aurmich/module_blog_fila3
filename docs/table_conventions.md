@@ -54,6 +54,12 @@ Le convenzioni per le tabelle nel modulo Blog sono progettate per garantire:
 4. Mantieni la coerenza con gli altri moduli
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Filament Tables](../laravel/Modules/Xot/docs/FILAMENT-TABLES.md)
 - [Sistema di Traduzione](../laravel/Modules/Lang/docs/README.md)
 - [Convenzioni Generali](../docs/NAMING_CONVENTIONS.md) 
+=======
+- [Documentazione Filament Tables](../laravel/Modules/Xot/project_docs/FILAMENT-TABLES.md)
+- [Sistema di Traduzione](../laravel/Modules/Lang/project_docs/README.md)
+- [Convenzioni Generali](../project_docs/NAMING_CONVENTIONS.md) 
+>>>>>>> b1b8a66 (.)

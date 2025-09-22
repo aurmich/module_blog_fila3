@@ -14,7 +14,11 @@ class Dashboard extends Page
 
     // public function mount(): void {
     //     $user = auth()->user();
+<<<<<<< HEAD
     //     if(!$user->hasRole('super-admin')){
+=======
+    //     if(!$user->hasRole('super-admin')/** @phpstan-ignore method.nonObject */){
+>>>>>>> b1b8a66 (.)
     //         redirect('/admin');
     //     }
     // }

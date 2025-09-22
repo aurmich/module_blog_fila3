@@ -8,7 +8,11 @@ https://flowrift.com/c/blog/cYo4a?view=code
 
 https://wickedblocks.dev/groups/content/
 
+<<<<<<< HEAD
 https://tw-elements.com/docs/standard/designblocks/landing-page/
+=======
+https://tw-elements.com/project_docs/standard/designblocks/landing-page/
+>>>>>>> b1b8a66 (.)
 
 https://pagedone.io/blocks
 

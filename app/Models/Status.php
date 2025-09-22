@@ -10,6 +10,7 @@ use Spatie\ModelStatus\Status as BaseStatus;
 /**
  * Modules\Blog\Models\Status.
  *
+<<<<<<< HEAD
  * @property int                                           $id
  * @property string                                        $name
  * @property string|null                                   $reason
@@ -19,6 +20,17 @@ use Spatie\ModelStatus\Status as BaseStatus;
  * @property \Illuminate\Support\Carbon|null               $updated_at
  * @property string|null                                   $updated_by
  * @property string|null                                   $created_by
+=======
+ * @property int $id
+ * @property string $name
+ * @property string|null $reason
+ * @property string $model_type
+ * @property int $model_id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+>>>>>>> b1b8a66 (.)
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $model
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Status newModelQuery()
@@ -36,8 +48,13 @@ use Spatie\ModelStatus\Status as BaseStatus;
  *
  * @property string $ip_address
  * @property string $user_agent
+<<<<<<< HEAD
  * @property int    $post_id
  * @property int    $user_id
+=======
+ * @property int $post_id
+ * @property int $user_id
+>>>>>>> b1b8a66 (.)
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Status whereIpAddress($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Status wherePostId($value)

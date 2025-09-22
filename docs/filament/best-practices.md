@@ -25,5 +25,10 @@ public function getTableActions(): array
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Filament](../../../Xot/docs/filament/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni di Codice](../../../Xot/docs/NAMING-CONVENTIONS.md) 
+=======
+- [Documentazione Filament](../../../Xot/project_docs/filament/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni di Codice](../../../Xot/project_docs/NAMING-CONVENTIONS.md) 
+>>>>>>> b1b8a66 (.)

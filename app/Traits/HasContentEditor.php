@@ -11,7 +11,11 @@ trait HasContentEditor
         $defaultEditor = config('filament-blog.editor');
 
         return $defaultEditor::make($field)
+<<<<<<< HEAD
             ->label(__('filament-blog::filament-blog.content'))
+=======
+            ->label((string) __('filament-blog::filament-blog.content'))
+>>>>>>> b1b8a66 (.)
             ->required()
             ->toolbarButtons(config('filament-blog.toolbar_buttons'))
             ->columnSpan([
